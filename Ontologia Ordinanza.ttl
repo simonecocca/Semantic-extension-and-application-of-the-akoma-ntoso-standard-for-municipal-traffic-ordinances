@@ -1,0 +1,892 @@
+@prefix : <http://example.com/ordinanza> .
+@prefix dc: <http://purl.org/dc/elements/1.1/#> .
+@prefix ex: <http://example.com/ordinanza#> .
+@prefix ti: <https://w3id.org/italia/onto/TI/> .
+@prefix aci: <http://lod.aci.it/ontology/> .
+@prefix clv: <https://w3id.org/italia/onto/CLV/> .
+@prefix cov: <https://w3id.org/italia/onto/COV/> .
+@prefix dtx: <http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://example.com/ordinanza> .
+
+<http://example.com/ordinanza> rdf:type owl:Ontology ;
+                                dc:creator "Cocca Simone" ;
+                                dc:description "Questa ontologia descrive la struttura di un'ordinanza comunale della viabilità"@it ;
+                                dc:title "Ontologia per le Ordinanze della viabilità"@it ;
+                                rdfs:comment "Concept related to ordinanza."@en ,
+                                             "Concetto relativo a ordinanza."@it ;
+                                rdfs:label "ordinanza"@it .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#hasOverallStartTime
+dtx:hasOverallStartTime rdf:type owl:AnnotationProperty ;
+                        rdfs:comment "Indica l'orario di inizio" ;
+                        rdfs:label "Has start Time" ;
+                        rdfs:domain dtx:PublicEvent .
+
+
+###  http://purl.org/dc/elements/1.1/#creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/#description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/#title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf rdfs:seeAlso .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#directionAtPoint
+dtx:directionAtPoint rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:DirezioneObbligatoria ,
+                                 ex:IstituzioneSensoUnico ;
+                     rdfs:range dtx:DirectionEnum ;
+                     rdfs:comment "Indica la direzione di marcia prevista per un determinato ordine."@it ,
+                                  "Specifies the direction of travel for a given order."@en ;
+                     rdfs:label "ha direzione"@it .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#hasPublicEventType
+dtx:hasPublicEventType rdf:type owl:ObjectProperty ;
+                       rdfs:domain dtx:PublicEvent ;
+                       rdfs:range dtx:PublicEventTypeEnum .
+
+
+###  http://example.com/ordinanza#eccetto_categoria_veicoli
+ex:eccetto_categoria_veicoli rdf:type owl:ObjectProperty ;
+                             rdfs:domain ex:CapolineaBusTaxi ,
+                                         ex:DirezioneObbligatoria ,
+                                         ex:DivietoAccessoVeicolare ,
+                                         ex:DivietoSostaRimozione ,
+                                         ex:DivietoTransitoVeicolare ,
+                                         ex:IstituzioneCorsiaRiservata ,
+                                         ex:SensoVietato ,
+                                         ex:SospensioneCorsiaRiservata ,
+                                         ex:SostaConsentita ,
+                                         ex:SostaRiservata ,
+                                         ex:StradaChiusaTotale ;
+                             rdfs:range ex:Veicoli ;
+                             rdfs:comment "Concept related to eccetto categoria veicoli."@en ,
+                                          "Concetto relativo a eccetto categoria veicoli."@it ;
+                             rdfs:label "eccetto veicoli"@it .
+
+
+###  http://example.com/ordinanza#firmata_da
+ex:firmata_da rdf:type owl:ObjectProperty ;
+              rdfs:domain ex:Ordinanza ;
+              rdfs:range foaf:person ;
+              rdfs:comment "Defines the person who signed the ordinance."@en ,
+                           "Definisce il nome della persona che ha firmato l'ordinanza" ;
+              rdfs:label "signed by"@en ,
+                         "Firmata da" .
+
+
+###  http://example.com/ordinanza#ha_categoria_veicoli
+ex:ha_categoria_veicoli rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:CapolineaBusTaxi ,
+                                    ex:DirezioneObbligatoria ,
+                                    ex:DivietoAccessoVeicolare ,
+                                    ex:DivietoSostaRimozione ,
+                                    ex:DivietoTransitoVeicolare ,
+                                    ex:IstituzioneCorsiaRiservata ,
+                                    ex:SensoVietato ,
+                                    ex:SospensioneCorsiaRiservata ,
+                                    ex:SostaConsentita ,
+                                    ex:SostaRiservata ,
+                                    ex:StradaChiusaTotale ;
+                        rdfs:range ex:Veicoli ;
+                        rdfs:comment "Concept related to ha categoria veicoli."@en ,
+                                     "Concetto relativo a ha categoria veicoli."@it ;
+                        rdfs:label "ha categoria veicoli"@it .
+
+
+###  http://example.com/ordinanza#ha_luogo
+ex:ha_luogo rdf:type owl:ObjectProperty ;
+            rdfs:domain ex:Ordine ;
+            rdfs:range ex:Luogo_Ordine ;
+            rdfs:comment "Indica il luogo in cui si applica l'ordine viabilistico."@it ,
+                         "Indicates the location to which the traffic order applies."@en ;
+            rdfs:label "ha luogo"@en ,
+                       "ha luogo"@it ,
+                       "ha_luogo"@en .
+
+
+###  http://example.com/ordinanza#stabilisce
+ex:stabilisce rdf:type owl:ObjectProperty ;
+              rdfs:domain ex:Ordinanza ;
+              rdfs:range ex:Ordine ;
+              rdfs:comment "Collega un'ordinanza al tipo di ordine viabilistico stabilito."@it ,
+                           "Links an ordinance to the established type of traffic order."@en ;
+              rdfs:label "stabilisce"@en ,
+                         "stabilisce"@it .
+
+
+###  https://example.com/ordinanza#relativeToTimeEvent
+ex:relativeToTimeEvent rdf:type owl:ObjectProperty ;
+                       rdfs:domain ti:TimeInterval ;
+                       rdfs:range dtx:PublicEvent ;
+                       rdfs:comment "Relativo all'orario di inizio dell'evento" ;
+                       rdfs:label "Relative to Time Event" .
+
+
+###  https://w3id.org/italia/onto/CLV/hasAddress
+clv:hasAddress rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:Luogo_Ordine ;
+               rdfs:range clv:Address ;
+               rdfs:comment "Concept related to hasaddress."@en ,
+                            "Concetto relativo a hasaddress."@it ;
+               rdfs:label "has current address"@en ,
+                          "hasAddress"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/hasAddressArea
+clv:hasAddressArea rdf:type owl:ObjectProperty ;
+                   rdfs:domain ex:Luogo_Ordine ;
+                   rdfs:range clv:AddressArea ;
+                   rdfs:comment "Concept related to hasaddressarea."@en ,
+                                "Concetto relativo a hasaddressarea."@it ;
+                   rdfs:label "has address area"@en ,
+                              "hasAddressArea"@en .
+
+
+###  https://w3id.org/italia/onto/COV/hasOrganization
+cov:hasOrganization rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:Ordinanza ;
+                    rdfs:range cov:Organization ;
+                    rdfs:comment "The relation that allows to associate an organization with anything." ;
+                    rdfs:label "Has Organization"@it .
+
+
+###  https://w3id.org/italia/onto/COV/hasSupportUnit
+cov:hasSupportUnit rdf:type owl:ObjectProperty ;
+                   rdfs:domain cov:SupportUnit ;
+                   rdfs:range cov:Organization ;
+                   rdfs:comment "Concept related to hassupportunit."@en ,
+                                "Concetto relativo a hassupportunit."@it ;
+                   rdfs:label "has Department"@en ,
+                              "hasSupportUnit"@en .
+
+
+###  https://w3id.org/italia/onto/TI/atTime
+ti:atTime rdf:type owl:ObjectProperty ;
+          rdfs:domain ex:Ordine ;
+          rdfs:range ti:TimeInterval ;
+          rdfs:comment "Concept related to attime."@en ,
+                       "Concetto relativo a attime."@it ;
+          rdfs:label "at Time"@en ,
+                     "atTime"@en .
+
+
+###  https://w3id.org/italia/onto/TI/hasDuration
+ti:hasDuration rdf:type owl:ObjectProperty ;
+               rdfs:domain dtx:PublicEvent ;
+               rdfs:range ti:Duration ;
+               rdfs:comment "This property is used to specify the temporal duration of the validity." ;
+               rdfs:label "Has duration" .
+
+
+###  https://w3id.org/italia/onto/TI/hasTemporalEntity
+ti:hasTemporalEntity rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:Ordinanza ;
+                     rdfs:range ti:TimeInstant ;
+                     rdfs:comment "Property that links a time indexed event to a temporal entity" ;
+                     rdfs:label "Has Date"@en ,
+                                "data"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.com/ordinanza#numeroProtocollo
+ex:numeroProtocollo rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ex:Ordinanza ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Alphanumeric code assigned by the public registry when the act is recorded."@en ,
+                                 "Codice alfanumerico assegnato in sede di protocollazione informatica dell'atto."@it ;
+                    rdfs:label "numero di protocollo"@it ,
+                               "protocol number"@en .
+
+
+###  https://w3id.org/italia/onto/TI/startTime
+ti:startTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain dtx:PublicEvent ;
+             rdfs:comment "This property represents the start date of the time interval" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#DirectionEnum
+dtx:DirectionEnum rdf:type owl:Class ;
+                  rdfs:comment "Insieme delle possibili direzioni di circolazione."@it ,
+                               "Set of possible directions of travel."@en ;
+                  rdfs:label "Direction Enum"@en ,
+                             "Direzioni"@it .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#PublicEvent
+dtx:PublicEvent rdf:type owl:Class ;
+                rdfs:comment "Is a Public event which could disrupt traffic" ;
+                rdfs:label "Public event" .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#PublicEventTypeEnum
+dtx:PublicEventTypeEnum rdf:type owl:Class ;
+                        rdfs:comment "Enumerates the Types of public events" ;
+                        rdfs:label "Types of public events" .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#basketballGame
+dtx:basketballGame rdf:type owl:Class ;
+                   rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#bicycleRace
+dtx:bicycleRace rdf:type owl:Class ;
+                rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#concert
+dtx:concert rdf:type owl:Class ;
+            rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#culturalEvent
+dtx:culturalEvent rdf:type owl:Class ;
+                  rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#eastBound
+dtx:eastBound rdf:type owl:Class ;
+              rdfs:subClassOf dtx:DirectionEnum ;
+              rdfs:comment "Direzione geografica verso est."@it ,
+                           "Geographical direction pointing east."@en ;
+              rdfs:label "East bound"@en ,
+                         "Est"@it .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#fair
+dtx:fair rdf:type owl:Class ;
+         rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#filmTVMaking
+dtx:filmTVMaking rdf:type owl:Class ;
+                 rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#footballMatch
+dtx:footballMatch rdf:type owl:Class ;
+                  rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#marathon
+dtx:marathon rdf:type owl:Class ;
+             rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#northBound
+dtx:northBound rdf:type owl:Class ;
+               rdfs:subClassOf dtx:DirectionEnum ;
+               rdfs:comment "Direzione geografica verso nord."@it ,
+                            "Geographical direction pointing north."@en ;
+               rdfs:label "Nord"@it ,
+                          "North Bound"@en .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#severalMajorEvents
+dtx:severalMajorEvents rdf:type owl:Class ;
+                       rdfs:subClassOf dtx:PublicEventTypeEnum .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#southBound
+dtx:southBound rdf:type owl:Class ;
+               rdfs:subClassOf dtx:DirectionEnum ;
+               rdfs:comment "Direzione geografica verso sud."@it ,
+                            "Geographical direction pointing south."@en ;
+               rdfs:label "South Bound"@en ,
+                          "Sud"@it .
+
+
+###  http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#westBound
+dtx:westBound rdf:type owl:Class ;
+              rdfs:subClassOf dtx:DirectionEnum ;
+              rdfs:comment "Direzione geografica verso ovest."@it ,
+                           "Geographical direction pointing west."@en ;
+              rdfs:label "Ovest"@it ,
+                         "West Bound"@en .
+
+
+###  http://example.com/ordinanza#Arbitri_osservatori_arbitrali
+ex:Arbitri_osservatori_arbitrali rdf:type owl:Class ;
+                                 rdfs:subClassOf ex:Veicoli ;
+                                 rdfs:comment "Concept related to arbitri osservatori arbitrali."@en ,
+                                              "Concetto relativo a arbitri osservatori arbitrali."@it ;
+                                 rdfs:label "Arbitri e osservatori arbitrali"@it ,
+                                            "Arbitri_osservatori_arbitrali"@en .
+
+
+###  http://example.com/ordinanza#Autobus_NCC
+ex:Autobus_NCC rdf:type owl:Class ;
+               rdfs:subClassOf ex:Veicoli ;
+               rdfs:comment "Concept related to autobus ncc."@en ,
+                            "Concetto relativo a autobus ncc."@it ;
+               rdfs:label "Autobus noleggio con conducente (NCC)"@it ,
+                          "Autobus_NCC"@en ;
+               skos:closeMatch "aci:Uso_per_noleggio_con_conducente" .
+
+
+###  http://example.com/ordinanza#Autobus_in_servizio_di_linea
+ex:Autobus_in_servizio_di_linea rdf:type owl:Class ;
+                                rdfs:subClassOf ex:Veicoli ;
+                                rdfs:comment "Vehicle used for public line transport."@en ,
+                                             "Veicolo adibito al trasporto pubblico di linea."@it ;
+                                rdfs:label "Autobus in servizio di linea"@it ,
+                                           "Autobus_in_servizio_di_linea"@en ;
+                                skos:closeMatch "aci:Uso_per_servizio_di_linea" .
+
+
+###  http://example.com/ordinanza#Autovetture_NCC
+ex:Autovetture_NCC rdf:type owl:Class ;
+                   rdfs:subClassOf ex:Veicoli ;
+                   rdfs:comment "Concept related to autovetture ncc."@en ,
+                                "Concetto relativo a autovetture ncc."@it ;
+                   rdfs:label "Autovetture in servizio di rimessa con conducente (NCC)"@it ,
+                              "Autovetture_NCC"@en ;
+                   skos:closeMatch "aci:Uso_per_noleggio_con_conducente" .
+
+
+###  http://example.com/ordinanza#Camper_e_roulotte
+ex:Camper_e_roulotte rdf:type owl:Class ;
+                     rdfs:subClassOf ex:Veicoli ;
+                     rdfs:comment "Concept related to camper e roulotte."@en ,
+                                  "Concetto relativo a camper e roulotte."@it ;
+                     rdfs:label "Camper_e_roulotte"@en ,
+                                "Caravan, autocaravan, camper e roulotte"@it .
+
+
+###  http://example.com/ordinanza#CapolineaBusTaxi
+ex:CapolineaBusTaxi rdf:type owl:Class ;
+                    rdfs:subClassOf ex:Ordine ;
+                    rdfs:comment "Area designated for shuttle bus terminal or taxi stand."@en ,
+                                 "Area destinata a capolinea bus navetta o posteggio taxi."@it ;
+                    rdfs:label "Capolinea bus navetta e posteggio taxi"@it ,
+                               "CapolineaBusTaxi"@en .
+
+
+###  http://example.com/ordinanza#ChiusuraFisica
+ex:ChiusuraFisica rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Ordine ;
+                  rdfs:comment "Blocco fisico della strada tramite transenne o catene."@it ,
+                               "Physical road closure using barriers or chains."@en ;
+                  rdfs:label "Chiusura fisica con transenne/catene"@it ,
+                             "ChiusuraFisica"@en .
+
+
+###  http://example.com/ordinanza#ChiusuraPistaCiclabile
+ex:ChiusuraPistaCiclabile rdf:type owl:Class ;
+                          rdfs:subClassOf ex:Ordine ;
+                          rdfs:comment "Inaccessibilità temporanea di una pista ciclabile."@it ,
+                                       "Temporary closure of a bike lane."@en ;
+                          rdfs:label "Chiusura della pista ciclabile"@it ,
+                                     "ChiusuraPistaCiclabile"@en .
+
+
+###  http://example.com/ordinanza#Destra
+ex:Destra rdf:type owl:Class ;
+          rdfs:subClassOf dtx:DirectionEnum ;
+          rdfs:comment "Direzione verso destra rispetto al senso di marcia."@it ,
+                       "Rightward direction from the vehicle's path."@en ;
+          rdfs:label "Destra"@en ,
+                     "Destra"@it .
+
+
+###  http://example.com/ordinanza#DirezioneObbligatoria
+ex:DirezioneObbligatoria rdf:type owl:Class ;
+                         rdfs:subClassOf ex:Ordine ;
+                         rdfs:comment "Obbligo di seguire una direzione specifica."@it ,
+                                      "Obligation to follow a specific direction."@en ;
+                         rdfs:label "Direzione obbligatoria/consentita"@it ,
+                                    "DirezioneObbligatoria"@en .
+
+
+###  http://example.com/ordinanza#DivietoAccessoVeicolare
+ex:DivietoAccessoVeicolare rdf:type owl:Class ;
+                           rdfs:subClassOf ex:Ordine ;
+                           rdfs:comment "Divieto per i veicoli di accedere a una zona specifica."@it ,
+                                        "Restriction preventing vehicles from entering a specific area."@en ;
+                           rdfs:label "Divieto di accesso veicolare"@it ,
+                                      "DivietoAccessoVeicolare"@en .
+
+
+###  http://example.com/ordinanza#DivietoSostaRimozione
+ex:DivietoSostaRimozione rdf:type owl:Class ;
+                         rdfs:subClassOf ex:Ordine ;
+                         rdfs:comment "Divieto di sosta con possibilità di rimozione forzata del veicolo."@it ,
+                                      "No parking with enforced vehicle removal."@en ;
+                         rdfs:label "Divieto di sosta con rimozione forzata"@it ,
+                                    "DivietoSostaRimozione"@en .
+
+
+###  http://example.com/ordinanza#DivietoTransitoPedonale
+ex:DivietoTransitoPedonale rdf:type owl:Class ;
+                           rdfs:subClassOf ex:Ordine ;
+                           rdfs:comment "Divieto per i pedoni di attraversare una determinata area."@it ,
+                                        "Prohibition on pedestrians transiting through a specific area."@en ;
+                           rdfs:label "Divieto di transito pedonale"@it ,
+                                      "DivietoTransitoPedonale"@en .
+
+
+###  http://example.com/ordinanza#DivietoTransitoVeicolare
+ex:DivietoTransitoVeicolare rdf:type owl:Class ;
+                            rdfs:subClassOf ex:Ordine ;
+                            rdfs:comment "Divieto rivolto ai veicoli di circolare in una determinata area."@it ,
+                                         "Prohibition on vehicles circulating in a specific area."@en ;
+                            rdfs:label "Divieto di transito veicolare"@it ,
+                                       "DivietoTransitoVeicolare"@en .
+
+
+###  http://example.com/ordinanza#Dritto
+ex:Dritto rdf:type owl:Class ;
+          rdfs:subClassOf dtx:DirectionEnum ;
+          rdfs:comment "Direzione di marcia in linea retta."@it ,
+                       "Straight-ahead direction."@en ;
+          rdfs:label "Dritto"@en ,
+                     "Dritto"@it .
+
+
+###  http://example.com/ordinanza#Giornalisti_accreditati
+ex:Giornalisti_accreditati rdf:type owl:Class ;
+                           rdfs:subClassOf ex:Veicoli ;
+                           rdfs:comment "Vehicles of accredited journalists."@en ,
+                                        "Veicoli di giornalisti con permesso."@it ;
+                           rdfs:label "Giornalisti accreditati"@it ,
+                                      "Giornalisti_accreditati"@en .
+
+
+###  http://example.com/ordinanza#Incaricati_squadre_nazionali
+ex:Incaricati_squadre_nazionali rdf:type owl:Class ;
+                                rdfs:subClassOf ex:Veicoli ;
+                                rdfs:comment "Vehicles accompanying national sports teams."@en ,
+                                             "Veicoli al seguito di rappresentative nazionali."@it ;
+                                rdfs:label "Incaricati squadre nazionali"@it ,
+                                           "Incaricati_squadre_nazionali"@en .
+
+
+###  http://example.com/ordinanza#IstituzioneCorsiaRiservata
+ex:IstituzioneCorsiaRiservata rdf:type owl:Class ;
+                              rdfs:subClassOf ex:Ordine ;
+                              rdfs:comment "Creazione di una corsia ad accesso esclusivo per determinati veicoli."@it ,
+                                           "Establishment of a reserved lane for specific vehicles."@en ;
+                              rdfs:label "Istituzione corsia riservata bus/taxi"@it ,
+                                         "IstituzioneCorsiaRiservata"@en .
+
+
+###  http://example.com/ordinanza#IstituzioneSensoUnico
+ex:IstituzioneSensoUnico rdf:type owl:Class ;
+                         rdfs:subClassOf ex:Ordine ;
+                         rdfs:comment "Introduction of one-way traffic flow on a road segment."@en ,
+                                      "Introduzione del senso unico di circolazione in un tratto stradale."@it ;
+                         rdfs:label "Istituzione senso unico di circolazione"@it ,
+                                    "IstituzioneSensoUnico"@en .
+
+
+###  http://example.com/ordinanza#Luogo_Ordine
+ex:Luogo_Ordine rdf:type owl:Class ;
+                rdfs:comment "Specifica in quale luogo si applica l'ordine"@it ,
+                             "Specify where the order applies"@en ;
+                rdfs:label "Luogo Ordine"@it ,
+                           "Order place"@en .
+
+
+###  http://example.com/ordinanza#Medici_antidoping
+ex:Medici_antidoping rdf:type owl:Class ;
+                     rdfs:subClassOf ex:Veicoli ;
+                     rdfs:comment "Vehicles of medical staff for anti-doping checks."@en ,
+                                  "Veicoli di personale medico addetto ai controlli antidoping."@it ;
+                     rdfs:label "Medici antidoping"@it ,
+                                "Medici_antidoping"@en .
+
+
+###  http://example.com/ordinanza#Mezzi_di_soccorso
+ex:Mezzi_di_soccorso rdf:type owl:Class ;
+                     rdfs:subClassOf ex:Veicoli ;
+                     rdfs:comment "Vehicles intended for medical or technical emergencies."@en ,
+                                  "Veicoli destinati a emergenze sanitarie o tecniche."@it ;
+                     rdfs:label "Mezzi di soccorso"@it ,
+                                "Mezzi_di_soccorso"@en ;
+                     skos:closeMatch "aci:Uso_di_soccorso" .
+
+
+###  http://example.com/ordinanza#Mezzi_militari
+ex:Mezzi_militari rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Veicoli ;
+                  rdfs:comment "Vehicles belonging to the armed forces."@en ,
+                               "Veicoli appartenenti alle forze armate."@it ;
+                  rdfs:label "Mezzi militari"@it ,
+                             "Mezzi_militari"@en ;
+                  skos:closeMatch "aci:Uso_per_pubblica_sicurezza" .
+
+
+###  http://example.com/ordinanza#Ordinanza
+ex:Ordinanza rdf:type owl:Class ;
+             rdfs:comment "Measure issued by a public authority to regulate traffic in a specific area."@en ,
+                          "Provvedimento emesso da un ente pubblico per regolare la viabilità in una determinata area."@it ;
+             rdfs:label "Ordinance"@en ,
+                        "Ordinanza"@it .
+
+
+###  http://example.com/ordinanza#Ordine
+ex:Ordine rdf:type owl:Class ;
+          rdfs:comment "Categoria di provvedimenti che specificano un'azione sulla viabilità."@it ,
+                       "Category of measures specifying an action on road traffic."@en ;
+          rdfs:label "Order"@en ,
+                     "Ordine"@it .
+
+
+###  http://example.com/ordinanza#Ospiti_autorizzati_Bologna_FC
+ex:Ospiti_autorizzati_Bologna_FC rdf:type owl:Class ;
+                                 rdfs:subClassOf ex:Veicoli ;
+                                 rdfs:comment "Concept related to ospiti autorizzati bologna fc."@en ,
+                                              "Concetto relativo a ospiti autorizzati bologna fc."@it ;
+                                 rdfs:label "Ospiti/autorizzati dal Bologna F.C."@it ,
+                                            "Ospiti_autorizzati_Bologna_FC"@en .
+
+
+###  http://example.com/ordinanza#Persone_con_ridotte_capacita_motorie
+ex:Persone_con_ridotte_capacita_motorie rdf:type owl:Class ;
+                                        rdfs:subClassOf ex:Veicoli ;
+                                        rdfs:comment "Concept related to persone con ridotte capacita motorie."@en ,
+                                                     "Concetto relativo a persone con ridotte capacita motorie."@it ;
+                                        rdfs:label "Persone con ridotte capacità motorie"@it ,
+                                                   "Persone_con_ridotte_capacita_motorie"@en .
+
+
+###  http://example.com/ordinanza#Rappresentanti_Procura_Federale
+ex:Rappresentanti_Procura_Federale rdf:type owl:Class ;
+                                   rdfs:subClassOf ex:Veicoli ;
+                                   rdfs:comment "Vehicles of the Federal Prosecutor’s Office (sports)."@en ,
+                                                "Veicoli della Procura Federale sportiva."@it ;
+                                   rdfs:label "Rappresentanti Procura Federale"@it ,
+                                              "Rappresentanti_Procura_Federale"@en .
+
+
+###  http://example.com/ordinanza#Residenti_muniti_di_titolo
+ex:Residenti_muniti_di_titolo rdf:type owl:Class ;
+                              rdfs:subClassOf ex:Veicoli ;
+                              rdfs:comment "Vehicles of authorized residents."@en ,
+                                           "Veicoli di residenti autorizzati."@it ;
+                              rdfs:label "Residenti muniti di titolo"@it ,
+                                         "Residenti_muniti_di_titolo"@en .
+
+
+###  http://example.com/ordinanza#RestringimentoCarreggiata
+ex:RestringimentoCarreggiata rdf:type owl:Class ;
+                             rdfs:subClassOf ex:Ordine ;
+                             rdfs:comment "Riduzione temporanea della larghezza della carreggiata."@it ,
+                                          "Temporary narrowing of the roadway."@en ;
+                             rdfs:label "Restringimento carreggiata"@it ,
+                                        "RestringimentoCarreggiata"@en .
+
+
+###  http://example.com/ordinanza#SensoUnicoAlternato
+ex:SensoUnicoAlternato rdf:type owl:Class ;
+                       rdfs:subClassOf ex:Ordine ;
+                       rdfs:comment "Alternating traffic flow on a single lane."@en ,
+                                    "Gestione del traffico alternata su un'unica corsia."@it ;
+                       rdfs:label "Senso unico alternato"@it ,
+                                  "SensoUnicoAlternato"@en .
+
+
+###  http://example.com/ordinanza#SensoVietato
+ex:SensoVietato rdf:type owl:Class ;
+                rdfs:subClassOf ex:Ordine ;
+                rdfs:comment "Divieto di procedere in una determinata direzione."@it ,
+                             "No entry in a specified direction."@en ;
+                rdfs:label "Senso vietato"@it ,
+                           "SensoVietato"@en .
+
+
+###  http://example.com/ordinanza#Sinistra
+ex:Sinistra rdf:type owl:Class ;
+            rdfs:subClassOf dtx:DirectionEnum ;
+            rdfs:comment "Direzione verso sinistra rispetto al senso di marcia."@it ,
+                         "Leftward direction from the vehicle's path."@en ;
+            rdfs:label "Sinistra"@en ,
+                       "Sinistra"@it .
+
+
+###  http://example.com/ordinanza#SospensioneCorsiaRiservata
+ex:SospensioneCorsiaRiservata rdf:type owl:Class ;
+                              rdfs:subClassOf ex:Ordine ;
+                              rdfs:comment "Sospensione temporanea dell'uso esclusivo della corsia riservata."@it ,
+                                           "Temporary suspension of reserved lane usage."@en ;
+                              rdfs:label "Sospensione corsia riservata bus/taxi"@it ,
+                                         "SospensioneCorsiaRiservata"@en .
+
+
+###  http://example.com/ordinanza#SostaConsentita
+ex:SostaConsentita rdf:type owl:Class ;
+                   rdfs:subClassOf ex:Ordine ;
+                   rdfs:comment "Area where parking is explicitly allowed."@en ,
+                                "Zona in cui la sosta è espressamente autorizzata."@it ;
+                   rdfs:label "Sosta consentita"@it ,
+                              "SostaConsentita"@en .
+
+
+###  http://example.com/ordinanza#SostaRegolamentata
+ex:SostaRegolamentata rdf:type owl:Class ;
+                      rdfs:subClassOf ex:Ordine ;
+                      rdfs:comment "Parking area subject to specific rules or limitations."@en ,
+                                   "Zona in cui la sosta è soggetta a specifiche regole o limiti."@it ;
+                      rdfs:label "Sosta regolamentata"@it ,
+                                 "SostaRegolamentata"@en .
+
+
+###  http://example.com/ordinanza#SostaRiservata
+ex:SostaRiservata rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Ordine ;
+                  rdfs:comment "Area di sosta riservata a specifiche categorie di veicoli."@it ,
+                               "Parking area reserved for specific vehicle categories."@en ;
+                  rdfs:label "Sosta riservata a veicoli specifici"@it ,
+                             "SostaRiservata"@en .
+
+
+###  http://example.com/ordinanza#StradaChiusaTotale
+ex:StradaChiusaTotale rdf:type owl:Class ;
+                      rdfs:subClassOf ex:Ordine ;
+                      rdfs:comment "Chiusura completa al transito veicolare e pedonale."@it ,
+                                   "Complete closure to both vehicles and pedestrians."@en ;
+                      rdfs:label "Strada chiusa - Divieto di transito veicolare e pedonale"@it ,
+                                 "StradaChiusaTotale"@en .
+
+
+###  http://example.com/ordinanza#Taxi
+ex:Taxi rdf:type owl:Class ;
+        rdfs:subClassOf ex:Veicoli ;
+        rdfs:comment "Vehicles authorized for non-scheduled public transport (taxis)."@en ,
+                     "Veicoli autorizzati al trasporto pubblico non di linea."@it ;
+        rdfs:label "Taxi"@en ,
+                   "Taxi"@it ;
+        skos:closeMatch "aci:Uso_per_servizio_di_piazza" .
+
+
+###  http://example.com/ordinanza#Veicoli
+ex:Veicoli rdf:type owl:Class ;
+           rdfs:comment "Concept related to veicoli."@en ,
+                        "Concetto relativo a veicoli."@it ;
+           rdfs:label "Veicoli"@en ,
+                      "Veicoli"@it .
+
+
+###  http://example.com/ordinanza#Veicoli_Bologna_FC
+ex:Veicoli_Bologna_FC rdf:type owl:Class ;
+                      rdfs:subClassOf ex:Veicoli ;
+                      rdfs:comment "Concept related to veicoli bologna fc."@en ,
+                                   "Concetto relativo a veicoli bologna fc."@it ;
+                      rdfs:label "Veicoli del Bologna F.C. 1909"@it ,
+                                 "Veicoli_Bologna_FC"@en .
+
+
+###  http://example.com/ordinanza#Veicoli_N2_N3
+ex:Veicoli_N2_N3 rdf:type owl:Class ;
+                 rdfs:subClassOf ex:Veicoli ;
+                 rdfs:comment "Concept related to veicoli n2 n3."@en ,
+                              "Concetto relativo a veicoli n2 n3."@it ;
+                 rdfs:label "Veicoli N2 - N3"@it ,
+                            "Veicoli_N2_N3"@en ;
+                 skos:closeMatch "aci:Autocarro" .
+
+
+###  http://example.com/ordinanza#Veicoli_a_due_ruote
+ex:Veicoli_a_due_ruote rdf:type owl:Class ;
+                       rdfs:subClassOf ex:Veicoli ;
+                       rdfs:comment "Motocicli, ciclomotori e biciclette."@it ,
+                                    "Two-wheeled vehicles: motorcycles, mopeds, bicycles."@en ;
+                       rdfs:label "Veicoli a due ruote"@it ,
+                                  "Veicoli_a_due_ruote"@en ;
+                       skos:closeMatch "aci:Motoveicolo" .
+
+
+###  http://example.com/ordinanza#Veicoli_della_Polizia
+ex:Veicoli_della_Polizia rdf:type owl:Class ;
+                         rdfs:subClassOf ex:Veicoli ;
+                         rdfs:comment "Vehicles used by police forces."@en ,
+                                      "Veicoli in uso alle forze di polizia."@it ;
+                         rdfs:label "Veicoli della Polizia"@it ,
+                                    "Veicoli_della_Polizia"@en ;
+                         skos:closeMatch "aci:Uso_per_pubblica_sicurezza" .
+
+
+###  http://example.com/ordinanza#Veicoli_manifestazione
+ex:Veicoli_manifestazione rdf:type owl:Class ;
+                          rdfs:subClassOf ex:Veicoli ;
+                          rdfs:comment "Vehicles directly involved in an authorized event."@en ,
+                                       "Veicoli direttamente coinvolti in una manifestazione autorizzata."@it ;
+                          rdfs:label "Veicoli manifestazione"@it ,
+                                     "Veicoli_manifestazione"@en .
+
+
+###  http://example.com/ordinanza#Veicoli_operativi_Hera
+ex:Veicoli_operativi_Hera rdf:type owl:Class ;
+                          rdfs:subClassOf ex:Veicoli ;
+                          rdfs:comment "Operational vehicles of Hera company."@en ,
+                                       "Veicoli operativi della società Hera."@it ;
+                          rdfs:label "Veicoli operativi Hera"@it ,
+                                     "Veicoli_operativi_Hera"@en ;
+                          skos:closeMatch "aci:Uso_speciale" .
+
+
+###  http://example.com/ordinanza#Veicoli_organizzazione_concerto
+ex:Veicoli_organizzazione_concerto rdf:type owl:Class ;
+                                   rdfs:subClassOf ex:Veicoli ;
+                                   rdfs:comment "Concept related to veicoli organizzazione concerto."@en ,
+                                                "Concetto relativo a veicoli organizzazione concerto."@it ;
+                                   rdfs:label "Veicoli dell organizzazione del concerto"@it ,
+                                              "Veicoli_organizzazione_concerto"@en .
+
+
+###  http://example.com/ordinanza#Veicoli_passi_carrai
+ex:Veicoli_passi_carrai rdf:type owl:Class ;
+                        rdfs:subClassOf ex:Veicoli ;
+                        rdfs:comment "Concept related to veicoli passi carrai."@en ,
+                                     "Concetto relativo a veicoli passi carrai."@it ;
+                        rdfs:label "Veicoli accedenti a passi carrai"@it ,
+                                   "Veicoli_passi_carrai"@en .
+
+
+###  http://example.com/ordinanza#Vigili_del_Fuoco
+ex:Vigili_del_Fuoco rdf:type owl:Class ;
+                    rdfs:subClassOf ex:Veicoli ;
+                    rdfs:comment "Vehicles used by the fire brigade."@en ,
+                                 "Veicoli impiegati dal corpo dei Vigili del Fuoco."@it ;
+                    rdfs:label "Vigili del Fuoco"@it ,
+                               "Vigili_del_Fuoco"@en ;
+                    skos:closeMatch "aci:Uso_di_soccorso" .
+
+
+###  http://xmlns.com/foaf/0.1/person
+foaf:person rdf:type owl:Class ;
+            rdfs:comment "A human individual as defined in the FOAF ontology"@en ,
+                         "Un individuo umano descritto nell'ontologia FOAF."@it ;
+            rdfs:label "Person"@en ,
+                       "Persona"@it .
+
+
+###  https://w3id.org/italia/onto/CLV/Address
+clv:Address rdf:type owl:Class ;
+            rdfs:comment "Concept related to address."@en ,
+                         "Concetto relativo a address."@it ;
+            rdfs:label "Address"@en .
+
+
+###  https://w3id.org/italia/onto/CLV/AddressArea
+clv:AddressArea rdf:type owl:Class ;
+                rdfs:comment "Concept related to addressarea."@en ,
+                             "Concetto relativo a addressarea."@it ;
+                rdfs:label "Address Area"@en ,
+                           "AddressArea"@en .
+
+
+###  https://w3id.org/italia/onto/COV/Organization
+cov:Organization rdf:type owl:Class ;
+                 rdfs:comment "Concept related to organization."@en ,
+                              "Concetto relativo a organization."@it ;
+                 rdfs:label "Organization"@en .
+
+
+###  https://w3id.org/italia/onto/COV/SupportUnit
+cov:SupportUnit rdf:type owl:Class ;
+                rdfs:comment "Internal structure of an organization that carries out support or operational functions for the issuance of administrative acts."@en ,
+                             "Struttura interna di un'organizzazione che svolge funzioni di supporto o operative per l'emanazione di atti amministrativi"@it ;
+                rdfs:label "Department"@en ,
+                           "Dipartimento"@it .
+
+
+###  https://w3id.org/italia/onto/TI/Duration
+ti:Duration rdf:type owl:Class ;
+            rdfs:comment "The class for representing duration." ;
+            rdfs:label "Duration" .
+
+
+###  https://w3id.org/italia/onto/TI/TimeInstant
+ti:TimeInstant rdf:type owl:Class ;
+               rdfs:comment "Concept related to timeinstant."@en ,
+                            "Concetto relativo a timeinstant."@it ;
+               rdfs:label "TimeInstant"@en .
+
+
+###  https://w3id.org/italia/onto/TI/TimeInterval
+ti:TimeInterval rdf:type owl:Class ;
+                rdfs:comment "Concept related to timeinterval."@en ,
+                             "Concetto relativo a timeinterval."@it ;
+                rdfs:label "Time Interval"@en ,
+                           "TimeInterval"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+ex:Arbitri_e_osservatori_arbitrali rdfs:comment "Vehicles used by referees and match observers."@en ,
+                                                "Veicoli utilizzati da arbitri e osservatori."@it .
+
+
+ex:Autobus_noleggio_con_conducente_NCC rdfs:comment "Autobus utilizzati per noleggio con conducente."@it ,
+                                                    "Buses used for charter hire with driver."@en .
+
+
+ex:Autovetture_in_servizio_di_rimessa_con_conducente_NCC rdfs:comment "Hired vehicles with drivers (NCC)."@en ,
+                                                                      "Veicoli con conducente a noleggio."@it .
+
+
+ex:Caravan_autocaravan_camper_e_roulotte rdfs:comment "Recreational vehicles such as caravans, campers, trailers."@en ,
+                                                      "Veicoli ricreazionali per sosta o viaggio."@it .
+
+
+<http://example.com/ordinanza#Ospiti_autorizzati_dal_Bologna_F.C.> rdfs:comment "Vehicles with special authorization from Bologna F.C."@en ,
+                                                                                "Veicoli con permesso speciale del Bologna F.C."@it .
+
+
+ex:Persone_con_ridotte_capacità_motorie rdfs:comment "Vehicles used by people with limited mobility."@en ,
+                                                     "Veicoli utilizzati da persone con disabilità motorie."@it .
+
+
+ex:Veicoli_N2_-_N3 rdfs:comment "Category N2/N3 goods transport vehicles."@en ,
+                                "Veicoli di categoria N2 e N3 destinati al trasporto merci."@it .
+
+
+ex:Veicoli_accedenti_a_passi_carrai rdfs:comment "Vehicles authorized to access driveways."@en ,
+                                                 "Veicoli autorizzati ad accedere a un passo carrabile."@it .
+
+
+ex:Veicoli_del_Bologna_F.C._1909 rdfs:comment "Official vehicles of Bologna F.C. 1909."@en ,
+                                              "Veicoli ufficiali del Bologna Football Club 1909."@it .
+
+
+ex:Veicoli_dell_organizzazione_del_concerto rdfs:comment "Official vehicles of the concert organization."@en ,
+                                                         "Veicoli ufficiali dell organizzazione di un evento musicale."@it .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
