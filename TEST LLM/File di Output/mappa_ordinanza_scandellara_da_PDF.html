@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa Ordinanza Scandellara (stub)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    #map { height: 90vh; width: 100%; }
+    .legend {
+      position: absolute; top: 10px; left: 10px; background: white; padding: 10px;
+      border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); font-family: sans-serif;
+    }
+    .legend h4 { margin: 0 0 8px 0; font-size: 14px; }
+    .legend ul { margin: 0; padding-left: 18px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="legend">
+    <h4>Ordinanza Scandellara – Nota</h4>
+    <p>Le coordinate geografiche non sono presenti nel PDF fornito, pertanto la mappa visualizza
+    soltanto lo sfondo OpenStreetMap. Le geometrie GeoJSON sono impostate a <code>null</code>.</p>
+    <p><strong>Percorso della manifestazione (nomi):</strong></p>
+    <ul>
+      <li>Parcheggio del centro commerciale Vialarga</li>
+      <li>Via Scandellara</li>
+      <li>Parco Eugenio Montale</li>
+      <li>Parco Campagna via Larga</li>
+      <li>Via del Carpentiere (attraversamento)</li>
+      <li>Parco Tanara</li>
+      <li>Via Ferrari</li>
+      <li>Via Larga (corsello lato ovest)</li>
+      <li>Via Cappelli</li>
+      <li>Parco Tanara</li>
+
+    </ul>
+    <p><strong>Strade con restrizioni alla circolazione (nomi):</strong></p>
+    <ul>
+      <li>Via Scandellara</li>
+      <li>Via Ferrari</li>
+      <li>Via Larga (corsello lato ovest)</li>
+
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    // Initialize map with a neutral world view (no specific city center available in the PDF)
+    var map = L.map('map').setView([0, 0], 2);
+
+    // OSM base layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Embedded GeoJSON stub
+    var geojsonData = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"nome": "Parcheggio del centro commerciale Vialarga", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Scandellara", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Parco Eugenio Montale", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Parco Campagna via Larga", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via del Carpentiere (attraversamento)", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Parco Tanara", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Ferrari", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Larga (corsello lato ovest)", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Cappelli", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Parco Tanara", "categoria": "percorso_manifestazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Scandellara", "categoria": "restrizione_circolazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Ferrari", "categoria": "restrizione_circolazione"}, "geometry": null}, {"type": "Feature", "properties": {"nome": "Via Larga (corsello lato ovest)", "categoria": "restrizione_circolazione"}, "geometry": null}]};
+
+    // Attempt to add any non-null geometries (none in this stub)
+    L.geoJSON(geojsonData, {
+      onEachFeature: function (feature, layer) {
+        var props = feature.properties || {};
+        var label = (props.nome ? props.nome + ' — ' : '') + (props.categoria || '');
+        layer.bindPopup(label);
+      }
+    }).addTo(map);
+  </script>
+</body>
+</html>
