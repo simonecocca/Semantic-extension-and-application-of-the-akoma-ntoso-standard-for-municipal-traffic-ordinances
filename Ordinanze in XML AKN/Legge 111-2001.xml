@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:eli="http://data.europa.eu/eli/ontology#" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:gu="http://www.gazzettaufficiale.it/eli/" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:na="http://www.normattiva.it/eli/" xmlns:nakn="http://normattiva.it/akn/vocabulary" xmlns:nrdfa="http://www.normattiva.it/rdfa/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfa="http://www.w3.org/1999/xhtml#">
+    <act name="monovigente">
+        <meta>
+            <identification source="">
+                <FRBRWork>
+                    <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/!main"/>
+                    <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111"/>
+                    <FRBRalias name="urn:nir" value="urn:nir:stato:legge:2001-03-16;111"/>
+                    <FRBRalias name="eli" value="eli/id/2001/04/12/001G0159/ORIGINAL"/>
+                    <FRBRdate date="2001-03-16" name=""/>
+                    <FRBRauthor as="#author" href=""/>
+                    <preservation>
+                        <nrdfa:eli about="na:id/2001/04/12/001G0159/ORIGINAL" aknrelname="eli/id/2001/04/12/001G0159/ORIGINAL">
+                            <nrdfa:span property="rdf:type" resource="eli:LegalResource"/>
+                            <nrdfa:span content=" Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana ed il Governo della Federazione russa sui trasporti internazionali di viaggiatori e merci su strada, con Protocollo, fatto a Mosca il 16 marzo 1999. " lang="it" property="eli:title" xml:lang="it"/>
+                            <nrdfa:span content="http://www.normattiva.it/eli/id/{yyyy}/{mm}/{dd}/{codiceRedazionale}/{tipoVersione}" property="eli:uri_schema"/>
+                            <nrdfa:span content="001G0159" property="eli:id_local"/>
+                            <nrdfa:span property="eli:type_document" resource="gu:tables/resource-type#LEGGE"/>
+                            <nrdfa:span content="2001-03-16" datatype="xsd:date" property="eli:date_document"/>
+                            <nrdfa:span property="eli:version" resource="gu:tables/versions#ORIGINAL"/>
+                        </nrdfa:eli>
+                    </preservation>
+                    <FRBRcountry value="it"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13/!main"/>
+                    <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13"/>
+                    <FRBRdate date="2001-04-13" name=""/>
+                    <FRBRauthor as="#author" href=""/>
+                    <preservation>
+                        <nrdfa:eli about="na:id/2001/04/12/001G0159/ORIGINAL/ita">
+                            <nrdfa:span property="rdf:type" resource="eli:LegalExpression"/>
+                            <nrdfa:span property="eli:realizes" resource="na:id/2001/04/12/001G0159/ORIGINAL"/>
+                            <nrdfa:span property="eli:is_embodied_by" resource="na:id/2001/04/12/001G0159/ORIGINAL/ita/akn"/>
+                            <nrdfa:span property="eli:language" resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+                            <nrdfa:span property="eli:publisher_agent" resource="http://www.ipzs.it"/>
+                        </nrdfa:eli>
+                    </preservation>
+                    <FRBRlanguage language="ita"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13/!main.xml"/>
+                    <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13.xml"/>
+                    <FRBRdate date="2001-03-16" name=""/>
+                    <FRBRauthor as="#author" href=""/>
+                    <preservation>
+                        <nrdfa:eli about="na:id/2001/04/12/001G0159/ORIGINAL/ita/akn">
+                            <nrdfa:span property="rdf:type" resource="eli:Format"/>
+                            <nrdfa:span property="eli:format" resource="http://www.iana.org/assignments/media-types/xml"/>
+                        </nrdfa:eli>
+                    </preservation>
+                </FRBRManifestation>
+            </identification>
+            <publication date="2001-04-12" name="" number="86" showAs=""/>
+            <lifecycle source="">
+                <eventRef date="2001-04-12" eId="eventRef_0" source="ro1"/>
+            </lifecycle>
+            <workflow source="">
+                <step by="#senato" date="2001-03-16" refersTo="#S.4502"/>
+                <step by="#camera" date="2001-03-16" refersTo="#C.7081"/>
+            </workflow>
+            <analysis source=""/>
+            <references source="">
+                <original eId="ro1" href="/akn/it/act/LEGGE/stato/2001-03-16/111/!main" showAs=""/>
+                <passiveRef eId="S.4502" href="/akn/it/senato-it:parl:ddl:senato;13.legislatura;4502" showAs=""/>
+                <passiveRef eId="C.7081" href="/akn/it/camera-it:parlamento:scheda.progetto.legge:camera;13.legislatura;7081" showAs=""/>
+            </references>
+            <proprietary source="">
+                <rdf:RDF>
+                    <rdf:Description rdf:about="na:id/2001/04/12/001G0159/ORIGINAL">
+                        <rdf:type rdf:resource="eli:LegalResource"/>
+                        <eli:title xml:lang="it"> Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana ed il Governo della Federazione russa sui trasporti internazionali di viaggiatori e merci su strada, con Protocollo, fatto a Mosca il 16 marzo 1999. </eli:title>
+                        <eli:uri_schema>http://www.normattiva.it/eli/id/{yyyy}/{mm}/{dd}/{codiceRedazionale}/{tipoVersione}</eli:uri_schema>
+                        <eli:id_local>001G0159</eli:id_local>
+                        <eli:type_document rdf:resource="gu:tables/resource-type#LEGGE"/>
+                        <eli:date_document rdf:datatype="xsd:date">2001-03-16</eli:date_document>
+                        <eli:version rdf:resource="gu:tables/versions#ORIGINAL"/>
+                    </rdf:Description>
+                    <rdf:Description rdf:about="na:id/2001/04/12/001G0159/ORIGINAL/ita">
+                        <rdf:type rdf:resource="eli:LegalExpression"/>
+                        <eli:realizes rdf:resource="na:id/2001/04/12/001G0159/ORIGINAL"/>
+                        <eli:is_embodied_by rdf:resource="na:id/2001/04/12/001G0159/ORIGINAL/ita/akn"/>
+                        <eli:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+                        <eli:publisher_agent rdf:resource="http://www.ipzs.it"/>
+                    </rdf:Description>
+                    <rdf:Description rdf:about="na:id/2001/04/12/001G0159/ORIGINAL/ita/akn">
+                        <rdf:type rdf:resource="eli:format"/>
+                        <eli:format rdf:resource="http://www.iana.org/assignments/media-types/xml"/>
+                    </rdf:Description>
+                </rdf:RDF>
+            </proprietary>
+        </meta>
+        <preface>
+            <p>
+                <docType>LEGGE</docType>
+                <docDate date="2001-03-16">16 marzo 2001</docDate>
+                <docNumber>111</docNumber>
+                <docTitle> Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana ed il Governo della Federazione russa sui trasporti internazionali di viaggiatori e merci su strada, con Protocollo, fatto a Mosca il 16 marzo 1999.
+</docTitle>
+            </p>
+        </preface>
+        <preamble>
+            <formula name="primaDiFormulaInizialePreambolo">
+                <p>La Camera dei deputati ed il Senato della Repubblica hanno approvato;</p>
+            </formula>
+            <formula name="formulaInizialePreambolo">
+                <p>IL PRESIDENTE DELLA REPUBBLICA</p>
+            </formula>
+            <formula name="formulaFinalePreambolo">
+                <p>Promulga la seguente legge:</p>
+            </formula>
+        </preamble>
+        <body>
+            <article eId="art_1">
+                <num>Art. 1.</num>
+                <heading/>
+                <paragraph eId="art_1__para_1">
+                    <num>1.</num>
+                    <content>
+                        <p>II Presidente della Repubblica e' autorizzato a ratificare l'Accordo tra il Governo della Repubblica italiana ed il Governo della Federazione russa sui trasporti internazionali di viaggiatori e merci su strada, con Protocollo, fatto a Mosca il 16 marzo 1999.
+</p>
+                    </content>
+                </paragraph>
+            </article>
+            <article eId="art_2">
+                <num>Art. 2.</num>
+                <heading/>
+                <paragraph eId="art_2__para_1">
+                    <num>1.</num>
+                    <content>
+                        <p>Piena ed intera esecuzione e' data all'Accordo di cui all'articolo 1, a decorrere dalla data della sua entrata in vigore, in conformita' a quanto disposto dall'articolo 24 dell'Accordo stesso.
+</p>
+                    </content>
+                </paragraph>
+            </article>
+            <article eId="art_3">
+                <num>Art. 3.</num>
+                <heading/>
+                <paragraph eId="art_3__para_1">
+                    <num>1.</num>
+                    <content>
+                        <p>All'onere derivante dall'attuazione della presente legge, valutato in lire 19 milioni per anni alterni a decorrere dal 2000, si provvede, per il triennio 2000-2002, mediante corrispondente riduzione dello stanziamento iscritto, ai fini del bilancio triennale 2000-2002, nell'ambito dell'unita' previsionale di base di parte corrente "Fondo speciale" dello stato di previsione del Ministero del tesoro, del bilancio e della programmazione economica per l'anno finanziario 2000, allo scopo parzialmente utilizzando l'accantonamento relativo al Ministero degli affari esteri.
+</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_3__para_2">
+                    <num>2.</num>
+                    <content>
+                        <p>Il Ministro del tesoro, del bilancio e della programmazione economica e' autorizzato ad apportare, con propri decreti, le occorrenti variazioni di bilancio.
+</p>
+                    </content>
+                </paragraph>
+            </article>
+            <article eId="art_4">
+                <num>Art. 4.</num>
+                <heading/>
+                <paragraph eId="art_4__para_1">
+                    <num>1.</num>
+                    <content>
+                        <p>La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella Gazzetta Ufficiale. 
+ </p>
+                    </content>
+                </paragraph>
+            </article>
+        </body>
+        <conclusions>
+            <formula name="formulaFinaleConclusioni">
+                <p>La presente legge, munita del sigillo dello Stato, sara' inserita nella Raccolta ufficiale degli atti normativi della Repubblica italiana. E' fatto obbligo a chiunque spetti di osservarla e di farla osservare come legge dello Stato. </p>
+            </formula>
+            <p> Data a Roma, addi' 16 marzo 2001 </p>
+            <p>Il Presidente del Senato della Repubblica nell'esercizio delle funzioni del Presidente della Repubblica, ai sensi dell'articolo 86 della Costituzione MANCINO Amato, Presidente del Consiglio dei Ministri Dini, Ministro degli affari esteri Visto, il Guardasigilli: Fassino</p>
+        </conclusions>
+        <attachments>
+            <attachment>
+                <doc name="Accordo">
+                    <meta>
+                        <identification source="">
+                            <FRBRWork>
+                                <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/!main/annesso_1"/>
+                                <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111"/>
+                                <FRBRalias name="urn:nir" value="urn:nir:stato:legge:2001-03-16;111"/>
+                                <FRBRalias name="eli" value="eli/id/2001/04/12/001G0159/ORIGINAL"/>
+                                <FRBRdate date="2001-04-13" name=""/>
+                                <FRBRauthor as="#author" href=""/>
+                                <FRBRcountry value="it"/>
+                            </FRBRWork>
+                            <FRBRExpression>
+                                <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13/!main/annesso_1"/>
+                                <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13"/>
+                                <FRBRdate date="2001-04-13" name=""/>
+                                <FRBRauthor as="#author" href=""/>
+                                <FRBRlanguage language="ita"/>
+                            </FRBRExpression>
+                            <FRBRManifestation>
+                                <FRBRthis value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13/!main/annesso_1.xml"/>
+                                <FRBRuri value="/akn/it/act/legge/stato/2001-03-16/111/ita@2001-04-13.xml"/>
+                                <FRBRdate date="2001-03-16" name=""/>
+                                <FRBRauthor as="#author" href=""/>
+                            </FRBRManifestation>
+                        </identification>
+                    </meta>
+                    <mainBody>
+                        <paragraph>
+                            <content>
+                                <p> ACCORDO TRA IL GOVERNO DELLA REPUBBLICA ITALIANA E IL GOVERNO 
+ DELLA FEDERAZIONE RUSSA SUI TRASPORTI INTERNAZIONALI DI 
+ VIAGGIATORI E MERCI SU STRADA 
+ 
+
+ Parte di provvedimento in formato grafico
+</p>
+                            </content>
+                        </paragraph>
+                    </mainBody>
+                </doc>
+            </attachment>
+        </attachments>
+    </act>
+</akomaNtoso>
