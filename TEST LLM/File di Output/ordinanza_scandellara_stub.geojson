@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Parcheggio del centro commerciale Vialarga",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Scandellara",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Parco Eugenio Montale",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Parco Campagna via Larga",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via del Carpentiere (attraversamento)",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Parco Tanara",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Ferrari",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Larga (corsello lato ovest)",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Cappelli",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Parco Tanara",
+        "categoria": "percorso_manifestazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Scandellara",
+        "categoria": "restrizione_circolazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Ferrari",
+        "categoria": "restrizione_circolazione"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Via Larga (corsello lato ovest)",
+        "categoria": "restrizione_circolazione"
+      },
+      "geometry": null
+    }
+  ]
+}
