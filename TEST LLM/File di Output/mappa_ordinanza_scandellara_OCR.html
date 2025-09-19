@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60aa587b8120f3bdc8d0f208971bedd8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60aa587b8120f3bdc8d0f208971bedd8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60aa587b8120f3bdc8d0f208971bedd8 = L.map(
+                "map_60aa587b8120f3bdc8d0f208971bedd8",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bbfaa8cf90cc76e9d2c38d4b6464c9c2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_60aa587b8120f3bdc8d0f208971bedd8);
+        
+    
+            var marker_5062b731d5c40f9897e89d83b700de5e = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_60aa587b8120f3bdc8d0f208971bedd8);
+        
+    
+        var popup_aab141ba43bf2d586a49b95f9e0967fe = L.popup({"maxWidth": 350});
+
+        
+            var i_frame_ff10e9bc7d88002e444d1b68df975aeb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VmllIGVzdHJhdHRlIGRhbCB0ZXN0byAoc2VuemEgY29vcmRpbmF0ZSk8L2g0PjxvbD48bGk+Y29yc28gZGkKcHJlZGlzcG9zaXppb25lPC9saT48bGk+Y29yc28gYSB0YWxlIGluaXppYXRpdmE8L2xpPjxsaT52aWEgU2NhbmRlbGxhcmEgLSBwYXJjbwoKRXVnZW5pbyBNb250YWxlIC0gcGFyY28gQ2FtcGFnbmEgdmlhIExhcmdhIC0gdmlhIGRlbCBDYXJwZW50aWVyZTwvbGk+PGxpPnBhcmNvIFRhbmFyYSAtIHZpYSBGZXJyYXJpIC0gdmlhIExhcmdhPC9saT48bGk+dmlhIENhcHBlbGxpIC0gcGFyY28gVGFuYXJhLgpPUkRJTkEKCmlsIGdpb3JubyAxNCBnaXVnbm8gMjAyNSBkYWxsZSBvcmUgMTkuMDAgYWxsZSBvcmUgMjEuMDAKClZJQSBTQ0FOREVMTEFSQSBESVZJRVRPIERJIFRSQU5TSVRPIFZFSUNPTEFSRQpkYWwgY2VudHJvIGNvbW1lcmNpYWxlIFZpYWxhcmdhIGVjY2V0dG8gYWNjZWRlbnRpIGEgcGFzc2kgY2FycmFpPC9saT48bGk+VklBIEZFUlJBUkkgRElWSUVUTyBESSBUUkFOU0lUTyBWRUlDT0xBUkUKZWNjZXR0byBhY2NlZGVudGkgYSBwYXNzaSBjYXJyYWk8L2xpPjxsaT5WSUEgTEFSR0EgRElWSUVUTyBESSBUUkFOU0lUTyBWRUlDT0xBUkUKCmNvcnNlbGxvIGxhdG8gb3Zlc3QgZWNjZXR0byBhY2NlZGVudGkgYSBwYXNzaSBjYXJyYWk8L2xpPjxsaT5TdHJhZGEgZWQgYWwgc3VvIFJlZ29sYW1lbnRvIGRpCkF0dHVhemlvbmU8L2xpPjwvb2w+" width="350" style="border:none !important;" height="300"></iframe>`)[0];
+            popup_aab141ba43bf2d586a49b95f9e0967fe.setContent(i_frame_ff10e9bc7d88002e444d1b68df975aeb);
+        
+
+        marker_5062b731d5c40f9897e89d83b700de5e.bindPopup(popup_aab141ba43bf2d586a49b95f9e0967fe)
+        ;
+
+        
+    
+    
+            marker_5062b731d5c40f9897e89d83b700de5e.bindTooltip(
+                `<div>
+                     Vie estratte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

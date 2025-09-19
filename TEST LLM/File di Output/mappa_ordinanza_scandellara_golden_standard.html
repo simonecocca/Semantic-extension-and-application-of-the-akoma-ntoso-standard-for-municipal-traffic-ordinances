@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa – Ordinanza Scandellara (DIVIETO DI TRANSITO)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    html, body, #map { height: 100%; margin: 0; padding: 0; }
+    .legend { background: white; padding: 8px 10px; border-radius: 8px; line-height: 1.4; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    .legend .swatch { display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align:middle; border-radius:2px; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  // Basemap
+  const map = L.map('map', { zoomControl: true }).setView([44.4949, 11.3426], 12); // Bologna approx
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Opendatasoft API endpoints (GeoJSON) filtered by CODVIA
+  // Using API v2 GeoJSON export (public endpoints).
+  const endpoints = [
+    { name: 'Via Scandellara (CODVIA 53550)', codvia: 53550, color: '#e41a1c' },
+    { name: 'Via Ferrari (CODVIA 22440)', codvia: 22440, color: '#377eb8' },
+    { name: 'Via Larga – corsello Ovest (CODVIA 30850)', codvia: 30850, color: '#4daf4a' }
+  ];
+
+  const layers = {};
+  const group = L.featureGroup();
+
+  function styleFor(color) {
+    return { color: color, weight: 5, opacity: 0.9 };
+  }
+
+  function addLegend() {
+    const legend = L.control({position: 'topright'});
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'legend');
+      div.innerHTML = '<strong>Tratti soggetti a restrizione</strong><br>' +
+        endpoints.map(e => '<span class="swatch" style="background:'+e.color+'"></span>' + e.name).join('<br>');
+      return div;
+    };
+    legend.addTo(map);
+  }
+
+  async function addLayerFor(endpoint) {
+    // GeoJSON export; filter records where codvia equals the desired code.
+    const url = `https://opendata.comune.bologna.it/api/v2/catalog/datasets/rifter_arcstra_li/exports/geojson?where=codvia%20%3D%20${endpoint.codvia}&epsg=4326`;
+
+    try {
+      const res = await fetch(url);
+      if (!res.ok) { throw new Error('HTTP '+res.status); }
+      const geojson = await res.json();
+      const layer = L.geoJSON(geojson, {
+        style: styleFor(endpoint.color),
+        onEachFeature: (feature, layer) => {
+          const props = feature.properties || {};
+          const title = props.nomestrada || props.nome_strada || 'Arco stradale';
+          layer.bindPopup(`<b>${endpoint.name}</b><br>CODVIA: ${endpoint.codvia}`);
+        }
+      });
+      layers[endpoint.name] = layer;
+      group.addLayer(layer);
+      layer.addTo(map);
+      map.fitBounds(group.getBounds(), {padding: [20, 20]});
+      return layer;
+    } catch (err) {
+      console.error('Errore nel caricamento GeoJSON per', endpoint, err);
+      // Fallback: no layer added
+      return null;
+    }
+  }
+
+  (async function() {
+    for (const e of endpoints) { await addLayerFor(e); }
+    addLegend();
+    L.control.layers(null, layers, { collapsed: true, position: 'topleft' }).addTo(map);
+  })();
+</script>
+</body>
+</html>
