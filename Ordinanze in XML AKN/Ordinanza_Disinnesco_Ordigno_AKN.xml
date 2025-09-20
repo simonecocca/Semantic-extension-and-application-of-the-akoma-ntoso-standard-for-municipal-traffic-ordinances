@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:html="http://www.w3.org/1999/xhtml">
+  <ordinance name="Ordinanza Disinnesco Ordigno Bellico 2025">
+    <meta>
+      <identification source="#org-comune-bologna">
+        <FRBRWork>
+          <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1"/>
+          <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1"/>
+          <FRBRdate date="2025-05-15" name="emanazione"/>
+          <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+          <FRBRcountry value="it"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1/ita@"/>
+          <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1/ita@"/>
+          <FRBRdate date="2025-05-15" name="redazione"/>
+          <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+          <FRBRlanguage language="ita"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1/ita@/!."/>
+          <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-05-15/1/ita@."/>
+          <FRBRdate date="2025-05-15" name="pubblicazione"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+        </FRBRManifestation>
+      </identification>
+
+      <references source="#">        
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40910"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40910"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40910"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26800"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26800"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26800"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=27350"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=27350"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=27350"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=46250"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=46250"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=46250"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=21400"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=21400"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=21400"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=35930"
+                     href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=35930"
+                     showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=35930"/>
+        
+        <TLCConcept href="http://example.com/ordinanza#ordinanza" showAs="ordinanza del traffico" eId="c-ordinanza"/>
+        <TLCConcept href="http://example.com/ordinanza#numeroProtocollo" showAs="numero di protocollo" eId="c-num-protocollo"/>
+        <TLCConcept href="http://example.com/ordinanza#firmata_da" showAs="firmata da" eId="c-firmata-da"/>
+        <TLCConcept href="http://example.com/ordinanza#StradaChiusaTotale" showAs="strada chiusa (totale)" eId="c-strada-chiusa-totale"/>
+        <TLCConcept href="http://example.com/ordinanza#DivietoTransitoVeicolare" showAs="divieto di transito veicolare" eId="c-divieto-transito-veicolare"/>
+        <TLCConcept href="http://example.com/ordinanza#DivietoTransitoPedonale" showAs="divieto di transito pedonale" eId="c-divieto-transito-pedonale"/>
+        <TLCConcept href="https://w3id.org/italia/onto/ti/TimeInterval" showAs="intervallo temporale" eId="c-ti-timeinterval"/>
+        <TLCConcept href="https://w3id.org/italia/onto/ti/startTime" showAs="ora inizio" eId="c-ti-start"/>
+        <TLCConcept href="https://w3id.org/italia/onto/ti/duration" showAs="durata" eId="c-ti-duration"/>
+
+        <TLCOrganization href="https://www.wikidata.org/entity/Q1891" showAs="Comune di Bologna" eId="org-comune-bologna"/>
+        <TLCOrganization href="urn:org:comune-bologna:ui-nucleo-operativo-interventi" showAs="Dipartimento Lavori Pubblici, Verde e Mobilità – U.I. Nucleo Operativo Interventi" eId="org-ui-nucleo-operativo-interventi"/>
+
+        <TLCPerson eId="person-nicola-latronico" href="/akn/ontology/person/http://example.com/ordinanza#firmata_da" showAs="Nicola Latronico"/>
+      </references>
+
+      <publication date="2025-05-15" name="Ordinanza Disinnesco Ordigno Bellico" number="345862/2025"/>
+    </meta>
+
+    <preface>
+      <p>
+        <ordinanceType refersTo="#c-ordinanza">Ordinanza del Traffico</ordinanceType>
+        <ordinanceDate>15 Maggio 2025</ordinanceDate>
+        <ordinanceNumber refersTo="#c-num-protocollo">PG. N. : 345862/2025</ordinanceNumber>
+        <ordinanceAuthority>Comune di Bologna</ordinanceAuthority>
+        <ordinanceAuthority>Dipartimento Lavori Pubblici, Verde e Mobilità – U.I. Nucleo Operativo Interventi</ordinanceAuthority>
+        <signature refersTo="#c-firmata-da">
+          <person as="#person-nicola-latronico">Nicola Latronico</person>
+        </signature>
+      </p>
+    </preface>
+
+    <preamble>
+      <p>I L D I R E T T O R E</p>
+      <p>Premesso che nel Comune di Bologna in via Prati di Caprara è stato rinvenuto un ordigno bellico risalente al II Conflitto Mondiale; che è stato emesso il provvedimento prefettizio a tutela della pubblica incolumità che dispone per il giorno 25 maggio 2025 la messa in sicurezza dell'ordigno e individua un'area di pericolo "danger zone" che comprende alcune strade del territorio del Comune di Bologna; Vista l'ordinanza del Comune di Bologna P.G. n. 309107/2025 che ordina l'evacuazione e l'allontanamento della popolazione presente nella "danger zone" con cessazione della circolazione veicolare e pedonale nella zona interdetta; Ritenuto pertanto necessario adottare specifici provvedimenti di modifica temporanea della regolamentazione della circolazione con chiusura al transito veicolare e pedonale delle strade interessate dalle ore 7,00 fino al termine delle operazioni di bonifica e/o cessate esigenze; Ai sensi degli artt. 5, 6, 7 del D.Lgs. 285/1992 (Codice della Strada) e del D.P.R. 495/1992 (Regolamento di attuazione).</p>
+    </preamble>
+
+    <mainBody>
+      <proviso eId="prov-1">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40910">VIA PAOLO NANNI COSTA</location>.
+        
+     	  <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+
+      <proviso eId="prov-2">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26800">VIA DEL GIACINTO</location>
+          <remark>(dal civico 12 a via del Giorgione)</remark>.
+        
+          <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+
+      <proviso eId="prov-3">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26800">VIA DEL GIACINTO</location>
+          <remark>(da via Emilia Ponente al civico 12)</remark>.
+        
+          <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+
+      <proviso eId="prov-4">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=27350">VIA DEL GIORGIONE</location>
+          <remark>(da via Martinelli a via Nanni Costa)</remark>.
+
+          <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+
+      <proviso eId="prov-5">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=46250">VIA PINTURICCHIO</location>
+          <remark>(dal civico 10 a via del Giorgione)</remark>.
+        
+	  <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+
+      <proviso eId="prov-6">
+        <p>
+          <concept refersTo="#c-strada-chiusa-totale">STRADA CHIUSA</concept> –
+          <concept refersTo="#c-divieto-transito-veicolare">DIVIETO DI TRANSITO VEICOLARE</concept> e
+          <concept refersTo="#c-divieto-transito-pedonale">PEDONALE</concept> in
+          <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=46250">VIA PINTURICCHIO</location>
+          <remark>(da via Emilia Ponente al civico 10)</remark>.
+        
+          <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">25 maggio 2025</orderDate>
+ 	  <orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime>
+	  <orderTime time="2025-05-25T23:59:59" refersTo="#https://w3id.org/italia/onto/ti/endtime">FINO A CESSATE ESIGENZE</orderTime>
+
+        </p>
+      </proviso>
+    </mainBody>
+
+    <conclusions>
+      <p>A U T O R I Z Z A – Il Corpo di P.M. a modificare i termini di tempo, le limitazioni e le restrizioni al traffico durante l'attuazione suddetta qualora esigenze o reali situazioni di fatto dovessero richiederlo.</p>
+      <p>D I S P O N E – che le linee  di trasporto pubblico urbano ed extraurbano subiscano quelle modifiche di percorso e di fermata che si renderanno necessarie durante lo svolgimento delle operazioni di cui alla presente ordinanza.</p>
+      <p>S O S P E N D E – Le precedenti ordinanze in contrasto con la presente nel periodo suindicato.</p>
+      <p>
+        Dalla Residenza Municipale<br/>
+        IL RESPONSABILE DELL'U.I. NUCLEO OPERATIVO INTERVENTI
+        <signature>documento firmato digitalmente <person as="#person-nicola-latronico">Nicola Latronico</person></signature>
+      </p>
+    </conclusions>
+  </ordinance>
+</akomaNtoso>
