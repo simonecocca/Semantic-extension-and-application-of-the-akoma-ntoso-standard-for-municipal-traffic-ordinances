@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <ordinance name="Ordinanza Stadio 2024/2025">
+    <meta>
+      <identification source="#org-comune-bologna">
+        <FRBRWork>
+          <FRBRthis value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024"/>
+          <FRBRuri value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024"/>
+          <FRBRdate date="2024-07-30" name="adoption"/>
+          <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+          <FRBRcountry value="it"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024/it@"/>
+          <FRBRuri value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024/it@"/>
+          <FRBRdate date="2024-07-30" name="expression"/>
+          <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+          <FRBRlanguage language="it"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024/it@/xml"/>
+          <FRBRuri value="/akn/it/bo/ordinance/stadio/2024-07-30/pg-532531-2024/it@/xml"/>
+          <FRBRdate date="2024-07-30" name="published"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+        </FRBRManifestation>
+      </identification>
+
+      <lifecycle>
+        <eventRef eId="efficacia-inizio" type="commencement" date="2024-08-08"/>
+        <eventRef eId="efficacia-fine" type="endOfEffect" date="2025-08-07"/>
+      </lifecycle>
+
+      <references>
+        <TLCOrganization eId="org-comune-bologna" showAs="Comune di Bologna"/>
+        <TLCOrganization eId="org-ui-nucleo-operativo-interventi" showAs="Dipartimento Lavori Pubblici, Verde e Mobilità – U.I. Nucleo Operativo Interventi"/>
+        <TLCPerson eId="person-nicola-latronico" showAs="Nicola Latronico"/>
+
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50880" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50880" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50880"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=37600" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=37600" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=37600"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=70" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=70" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=70"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=43050" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=43050" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=43050"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=57900" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=57900" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=57900"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52380" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52380" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52380"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18800" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18800" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18800"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=22800" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=22800" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=22800"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26700" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26700" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=26700"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55900" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55900" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55900"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52950" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52950" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52950"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=1350" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=1350" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=1350"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=32650" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=32650" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=32650"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20470" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20470" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20470"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=62160" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=62160" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=62160"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=45700" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=45700" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=45700"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=36250" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=36250" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=36250"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41060" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41060" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41060"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=33680" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=33680" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=33680"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=5800" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=5800" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=5800"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56520" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56520" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56520"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52900" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52900" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52900"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=14220" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=14220" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=14220"/>
+        <TLCLocation eId="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=7440" href="/akn/ontology/location/https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=7440" showAs="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=7440"/>
+
+        <!-- Ontology bindings for temporal/event semantics -->
+        <TLCConcept eId="ex-relativeToTimeEvent" showAs="relativeToTimeEvent" href="ex:relativeToTimeEvent"/>
+        <TLCConcept eId="ti-startTime" showAs="startTime" href="ti:startTime"/>
+        <TLCConcept eId="ti-hasDuration" showAs="hasDuration" href="ti:hasDuration"/>
+        <TLCConcept eId="dtx-PublicEvent" showAs="PublicEvent" href="dtx:PublicEvent"/>
+        <TLCConcept eId="dtx-footballMatch" showAs="footballMatch" href="dtx:footballMatch"/>
+        <TLCConcept eId="dtx-hasOverallStartTime" showAs="hasOverallStartTime" href="dtx:hasOverallStartTime"/>
+	<TLCConcept href="https://w3id.org/italia/onto/CLV/AddressArea" showAs="CLV:AddressArea" eId="c-clv-addressArea"/>
+
+        <!-- Event instance (season) -->
+        <TLCConcept eId="event-stadio-2024-25" showAs="Incontri di calcio Stadio &quot;Renato Dall'Ara&quot; stagione 2024/2025" href="dtx:footballMatch"/>
+
+        <!-- Normative references -->
+        <TLCReference eId="norm-cds-art5" showAs="D.Lgs. 285/1992, art. 5"/>
+        <TLCReference eId="norm-cds-art6" showAs="D.Lgs. 285/1992, art. 6"/>
+        <TLCReference eId="norm-cds-art7" showAs="D.Lgs. 285/1992, art. 7"/>
+        <TLCReference eId="norm-dpr-495-1992" showAs="D.P.R. 495/1992 (Regolamento di esecuzione)"/>
+      </references>
+
+      <publication date="2024-07-30" name="Disciplina circolazione veicolare in occasione incontri di calcio e manifestazioni - Stagione 2024/2025" number="532531/2024"/>
+    </meta>
+
+    <preface>
+      <p>
+        <ordinanceType>Ordinanza del Traffico</ordinanceType>
+        <ordinanceDate>30 luglio 2024</ordinanceDate>
+        <ordinanceNumber>PG. N. : 532531/2024</ordinanceNumber>
+        <ordinanceAuthority>Comune di Bologna – U.I. Nucleo Operativo Interventi</ordinanceAuthority>
+        <signature>documento firmato digitalmente <person as="#person-nicola-latronico">Nicola Latronico</person></signature>
+      </p>
+    </preface>
+
+    <preamble>
+      <p>Visti gli artt. 5, 6, 7 del D.Lgs. 285/1992 e il D.P.R. 495/1992; sentiti Questura, Comando di Polizia Locale e TPER; si rende necessario adottare provvedimenti straordinari di traffico in occasione di <concept refersTo="#dtx-PublicEvent">eventi pubblici</concept> e, in particolare, degli <concept refersTo="#dtx-footballMatch">incontri di calcio</concept> presso lo Stadio “Renato Dall’Ara”.</p>
+      <p>Periodo di efficacia dell’ordinanza: <date date="2024-08-08">08/08/2024</date> – <date date="2025-08-07">07/08/2025</date>. I singoli ordini sono attivi in relazione al giorno/ora dell’evento, secondo le regole temporali definite nel dispositivo.</p>
+    </preamble>
+
+    <mainBody>
+      <section eId="regole-temporali">
+        <heading>Regole temporali (legate all’evento)</heading>
+        <p>
+          <concept refersTo="#ex-relativeToTimeEvent">Regola</concept> di attivazione
+          <concept refersTo="#ti-startTime">startTime</concept> e
+          <concept refersTo="#ti-hasDuration">durate</concept> dei provvedimenti
+          relative all’<ref href="#event-stadio-2024-25">evento</ref> (<concept refersTo="#dtx-hasOverallStartTime">hasOverallStartTime</concept> da indicare in seguito per ciascun incontro).
+        </p>
+        <list>
+          <item eId="rt-1">
+            <p>Perimetro “divieto di accesso veicolare”: <term>da 2 ore prima</term> dell’<concept refersTo="#ti-startTime">inizio</concept> dell’incontro fino all’<term>inizio</term> stesso; e da <term>30 minuti prima</term> del termine a <term>2 ore dopo</term> la fine (<concept refersTo="#ex-relativeToTimeEvent">relativo all’evento</concept>).</p>
+          </item>
+          <item eId="rt-2">
+            <p>Divieti di sosta principali: <term>da 6 ore prima</term> dell’<concept refersTo="#ti-startTime">inizio</concept> a <term>1 ora dopo</term> il termine (<concept refersTo="#ex-relativeToTimeEvent">relativo all’evento</concept>).</p>
+          </item>
+          <item eId="rt-3">
+            <p>Alcuni divieti di sosta aggiuntivi e deroghe come da elenco specifico, con finestre: <term>da 3 ore</term> a <term>1 ora</term> dopo; oppure <term>da 3 ore e 30 minuti</term> a <term>30 minuti</term> dopo (<concept refersTo="#ex-relativeToTimeEvent">relativo all’evento</concept>).</p>
+          </item>
+        </list>
+      </section>
+
+      <section eId="divieto-accesso-perimetro">
+        <heading>Divieto di accesso veicolare (perimetro)</heading>
+        <p><concept refersTo="#ti-hasDuration"/> <concept refersTo="#ti-startTime"/> <concept refersTo="#ti-hasTemporalEntity"><ref href="#te-perimetro">temporalità relativa all’evento</ref></concept> (<ref href="#event-stadio-2024-25"/> ↦ <concept refersTo="#dtx-hasOverallStartTime"/>)</p>
+        <p>All’interno del perimetro delimitato da:</p>
+        <list refersTo="#c-clv-addressArea">
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450">Via Irma Bandiera</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600">Via Montefiorino</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000">Via Tolmino</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430">Viale M. K. Gandhi</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50880">Rotonda Romagnoli</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930">Via Giuseppe Saragat</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850">Via della Barca</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa (da via della Barca a via Porrettana)</location></item>
+          <item><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location></item>
+        </list>
+        <p>Le strade di perimetro sono escluse dal divieto, eccetto <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600">Via Montefiorino</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850">Via della Barca</location> e <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location>.</p>
+        <p><em>Nota:</em> su <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location> il divieto può estendersi anche ai veicoli autorizzati su indicazione dell’Autorità di P.S.</p>
+      </section>
+
+      <section eId="chiusure-intersezioni">
+        <heading>Chiusure alle intersezioni</heading>
+        <p><concept refersTo="#ti-hasDuration"/> <concept refersTo="#ti-startTime"/> <concept refersTo="#ti-hasTemporalEntity"><ref href="#te-intersezioni">temporalità relativa all’evento</ref></concept> (<ref href="#event-stadio-2024-25"/> ↦ <concept refersTo="#dtx-hasOverallStartTime"/>)</p>
+        <list>
+          <item>Intersezione tra <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600">Via Montefiorino</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450">Via Irma Bandiera</location> e <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=7440">Rotonda Fulvio Bernardini</location> (solo al termine dell’incontro, su Via Andrea Costa direzione centro)</item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350">Via De Coubertin</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450">Via Irma Bandiera</location></item>
+          <item>In corrispondenza dell’<location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=37600">Arco del Meloncello</location></item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850">Via della Barca</location></item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=70">Via dell’Abate</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930">Via Saragat</location></item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600">Via Montefiorino</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000">Via Tolmino</location></item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450">Via Don Sturzo</location></item>
+          <item>In <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4850">Via della Barca</location> all’intersezione con <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930">Via Saragat</location></item>
+        </list>
+      </section>
+
+      <section eId="altri-provvedimenti">
+        <heading>Altri provvedimenti</heading>
+        <list>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location>: direzione obbligatoria a destra all’uscita del parcheggio Antistadio.</p></item>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52950">Via Saragozza</location>: sospensione corsia riservata Bus/Taxi da <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350">Via De Coubertin</location> a <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=1350">Viale Aldini</location> e sospensione controllo elettronico.</p></item>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55900">Via dello Sport</location>: divieti di transito con deroghe come da elenco.</p></item>
+        </list>
+      </section>
+
+      <section eId="divieti-sosta">
+        <heading>Divieti di sosta e sosta consentita</heading>
+        <p><concept refersTo="#ti-hasDuration"/> <concept refersTo="#ti-startTime"/> <concept refersTo="#ti-hasTemporalEntity"><ref href="#te-sosta">temporalità relativa all’evento</ref></concept> (<ref href="#event-stadio-2024-25"/> ↦ <concept refersTo="#dtx-hasOverallStartTime"/>)</p>
+        <p>Finestra principale: <term>da 6 ore prima</term> a <term>1 ora dopo</term> l’evento (<concept refersTo="#ex-relativeToTimeEvent">relativo all’evento</concept>).</p>
+        <list>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location>: divieto di sosta con rimozione forzata da Arco del Meloncello a intersezione <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450">Via Don Sturzo</location>/<location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location>, eccetto autorizzati.</p></item>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=19350">Via De Coubertin</location>: divieto di sosta (lato civici pari) eccetto autorizzati.</p></item>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location>: divieto di sosta in vari tratti per capolinea navetta stadio e posteggio taxi.</p></item>
+        </list>
+        <p>Finestre ulteriori: <term>da 3 ore</term> a <term>1 ora</term> dopo; e <term>da 3 ore 30</term> a <term>30 minuti</term> dopo (vedi dettagli per <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430">Viale M. K. Gandhi</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=58000">Via Tolmino</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=45700">Via Piave</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=36250">Via Marzabotto</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41060">Via Pietro Nenni</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52930">Via Giuseppe Saragat</location>, Via Togliatti, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52900">Via Raffaello Sanzio</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=14220">Via Cassini</location>).</p>
+      </section>
+
+      <section eId="corsie-riservate">
+        <heading>Corsie riservate Bus/Taxi (sospensione controllo)</heading>
+        <p><concept refersTo="#ti-hasDuration"/> <concept refersTo="#ti-startTime"/> <concept refersTo="#ti-hasTemporalEntity"><ref href="#te-corsie">temporalità relativa all’evento</ref></concept> (<ref href="#event-stadio-2024-25"/> ↦ <concept refersTo="#dtx-hasOverallStartTime"/>)</p>
+        <list>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location>: da <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=56450">Via Don Sturzo</location> a <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=32650">Via di San Luca</location>.</p></item>
+          <item><p><location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=52950">Via Saragozza</location>: da <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location> a <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=1350">Viale Aldini</location>.</p></item>
+        </list>
+      </section>
+
+      <section eId="note-temporali">
+        <heading>Annotazione semantica temporale</heading>
+        <p>Per ogni provvedimento sopra descritto si intende che l’<concept refersTo="#ti-startTime">istante di inizio</concept> è <concept refersTo="#ex-relativeToTimeEvent">relativo</concept> all’<ref href="#event-stadio-2024-25">evento</ref> (<concept refersTo="#dtx-hasOverallStartTime">hasOverallStartTime</concept> da dettagliare per ciascuna partita) e le finestre “prima/dopo” sono modellate come <concept refersTo="#ti-hasDuration">durate</concept> anteriori/posteriori rispetto a tale istante.</p>
+      </section>
+    </mainBody>
+
+    <conclusions>
+      <p><b>Autorizza</b> TPER a istituire fermate speciali per le corse “Stadio” in corrispondenza di: complesso ex ICO; <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=43050">Piazza della Pace (tratto su Via Irma Bandiera, da 30 m prima fino al passo carraio civ. 10-12)</location></p>
+      <p><b>Dispone</b> modalità di accesso ai parcheggi B1/Piazza della Pace, Interno Stadio, Bocciodromo, Antistadio secondo i contrassegni rilasciati dal Bologna F.C. 1909.</p>
+      <p><b>Ordina altresì</b> divieti di sosta per operatori non autorizzati nell’area delimitata da <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18000">Via Andrea Costa</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=39600">Via Montefiorino</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=4450">Via Irma Bandiera</location>, <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=47300">Via Porrettana</location> e <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=15900">Via della Certosa</location> (dalle 08:00 a 1 ora dopo la fine dell’incontro).</p>
+      <p><b>Ordina infine</b> adozione e posa di segnaletica/transenne, corsie bus temporanee in <location refersTo="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=25430">Viale M. K. Gandhi</location>, esposizione tabelline calendario almeno 72 ore prima e corrette esecuzioni a norma CdS e Reg.</p>
+      <p><b>Sospende</b> le ordinanze in contrasto nel periodo indicato.</p>
+    </conclusions>
+  </ordinance>
+</akomaNtoso>
