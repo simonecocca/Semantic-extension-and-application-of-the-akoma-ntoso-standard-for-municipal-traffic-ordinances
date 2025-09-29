@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <ordinance name="Ordinanza traffico – Fiera Autopromotec 2025">
+    <meta>
+      <identification source="#ComuneBologna">
+        <FRBRWork>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13/work"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13"/>
+          <FRBRdate date="2025-05-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+          <FRBRcountry value="it"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13/ita@/exp"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13/ita@"/>
+          <FRBRdate date="2025-05-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+          <FRBRlanguage language="ita"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13/ita@/main.xml"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/autopromotec/2025-05-13/ita@"/>
+          <FRBRdate date="2025-05-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+        </FRBRManifestation>
+      </identification>
+      <publication name="Autopromotec 2025" date="2025-05-13" number="337541/2025"/>
+      <references>
+        <TLCConcept eId="c-divietotransitoveicolare" href="http://example.com/ordinanza#divietotransitoveicolare" showAs="DIVIETO DI TRANSITO VEICOLARE"/>
+        <TLCConcept eId="c-divietodisosta_rimozione" href="http://example.com/ordinanza#divietodisosta_rimozione" showAs="DIVIETO DI SOSTA - RIMOZIONE FORZATA"/>
+        <TLCConcept eId="c-sosta_regolamentata" href="http://example.com/ordinanza#sosta_regolamentata" showAs="SOSTA REGOLAMENTATA"/>
+        <TLCConcept eId="c-chiusura_pista_ciclabile" href="http://example.com/ordinanza#chiusura_pista_ciclabile" showAs="CHIUSURA DELLA PISTA CICLABILE"/>
+        <TLCConcept eId="c-direzione_obbligatoria" href="http://example.com/ordinanza#direzione_obbligatoria" showAs="DIREZIONE OBBLIGATORIA"/>
+        <TLCConcept eId="c-direzioni_consentite" href="http://example.com/ordinanza#direzioni_consentite" showAs="DIREZIONI CONSENTITE"/>
+        <TLCConcept eId="c-eccetto" href="http://example.com/ordinanza#eccetto" showAs="ECCETTO"/>
+        <TLCPerson eId="e-autorizzati_fiera" href="http://example.com/ordinanza#autorizzati_fiera" showAs="autorizzati da Bologna &amp; Fiera Parking SPA"/>
+        <TLCPerson eId="e-navette_bus_tper" href="http://example.com/ordinanza#navette_bus_tper" showAs="navette bus Tper"/>
+        <TLCPerson eId="e-bus_tper" href="http://example.com/ordinanza#bus_tper" showAs="bus di linea Tper"/>
+        <TLCPerson eId="e-taxi" href="http://example.com/ordinanza#taxi" showAs="taxi"/>
+        <TLCPerson eId="e-ncc" href="http://example.com/ordinanza#ncc" showAs="n.c.c."/>
+        <TLCPerson eId="e-pullman_turistici" href="http://example.com/ordinanza#pullman_turistici" showAs="pullman turistici"/>
+        <TLCPerson eId="e-pullman_contrassegno" href="http://example.com/ordinanza#pullman_contrassegno" showAs="pullman turistici con contrassegno Bologna &amp; Fiera Parking SPA"/>
+        <TLCPerson eId="e-accedenti_passi_carrai" href="http://example.com/ordinanza#accedenti_passi_carrai" showAs="accedenti a passi carrai"/>
+        <TLCPerson eId="e-accedenti_prop_private" href="http://example.com/ordinanza#accedenti_prop_private" showAs="accedenti a proprietà private"/>
+        <TLCPerson eId="e-accedenti_parcheggio_fiera" href="http://example.com/ordinanza#accedenti_parcheggio_fiera" showAs="accedenti al parcheggio gestito da Bologna &amp; Fiera Parking SPA"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=60210"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38300"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31030"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41730"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18150"/>
+        <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40280"/>
+      </references>
+    </meta>
+    <mainBody/>
+    <mainBody>
+      <proviso eId="A1_p1">
+        <content eId="A1_p1__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 maggio 2025</orderDate><orderDate date="2025-05-20" refersTo="#https://w3id.org/italia/onto/ti/endTime">20 maggio 2025</orderDate><orderTime time="2025-05-14T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-14T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A1_p1__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=60210"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA ONDINA VALLA </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="A1_p2">
+        <content eId="A1_p2__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 maggio 2025</orderDate><orderDate date="2025-05-20" refersTo="#https://w3id.org/italia/onto/ti/endTime">20 maggio 2025</orderDate><orderTime time="2025-05-14T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-14T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A1_p2__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38300"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MICHELINO </location>. </location><text>dal tratto compreso tra ROTONDA DONATI e ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA, in direzione VIA ONDINA VALLA. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="A1_p3">
+        <content eId="A1_p3__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 maggio 2025</orderDate><orderDate date="2025-05-20" refersTo="#https://w3id.org/italia/onto/ti/endTime">20 maggio 2025</orderDate><orderTime time="2025-05-14T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-14T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A1_p3__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31030"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="A2_p1">
+        <content eId="A2_p1__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/startTime">25 maggio 2025</orderDate><orderDate date="2025-05-27" refersTo="#https://w3id.org/italia/onto/ti/endTime">27 maggio 2025</orderDate><orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-25T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A2_p1__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=60210"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA ONDINA VALLA </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="A2_p2">
+        <content eId="A2_p2__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/startTime">25 maggio 2025</orderDate><orderDate date="2025-05-27" refersTo="#https://w3id.org/italia/onto/ti/endTime">27 maggio 2025</orderDate><orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-25T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A2_p2__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38300"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MICHELINO </location>. </location><text>dal tratto compreso tra ROTONDA DONATI e ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA, in direzione VIA ONDINA VALLA. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="A2_p3">
+        <content eId="A2_p3__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-25" refersTo="#https://w3id.org/italia/onto/ti/startTime">25 maggio 2025</orderDate><orderDate date="2025-05-27" refersTo="#https://w3id.org/italia/onto/ti/endTime">27 maggio 2025</orderDate><orderTime time="2025-05-25T06:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 06.00</orderTime><orderTime time="2025-05-25T14:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 14.00</orderTime><text>in </text><location eId="A2_p3__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31030"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p1">
+        <content eId="B_p1__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p1__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=60210"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA ONDINA VALLA </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p2">
+        <content eId="B_p2__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p2__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41730"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA TAZIO NUVOLARI </location>. </location><text>in direzione VIA ONDINA VALLA. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#navette_bus_tper">navette bus Tper</entity>, <entity refersTo="#http://example.com/ordinanza#accedenti_passi_carrai">accedenti a passi carrai</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p3">
+        <content eId="B_p3__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p3__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA STALINGRADO </location>. </location><text>dal civ. 65/4 alla ROTONDA TASSISTI VITTIME DELLA STRAGE DEL 2 AGOSTO 1980, in direzione VIA NUVOLARI. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#accedenti_prop_private">accedenti a proprietà private</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#navette_bus_tper">navette bus Tper</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p4">
+        <content eId="B_p4__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p4__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=41730"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA TAZIO NUVOLARI </location>. </location><text>in direzione VIA STALINGRADO. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p5">
+        <content eId="B_p5__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p5__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA STALINGRADO </location>. </location><text>dal civ. 65/4 alla ROTONDA TASSISTI VITTIME DELLA STRAGE DEL 2 AGOSTO 1980. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p6">
+        <content eId="B_p6__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p6__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA STALINGRADO </location>. </location><text>dal civ. 65/13 al civ. 65/26. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#accedenti_prop_private">accedenti a proprietà private</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p7">
+        <content eId="B_p7__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p7__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA STALINGRADO </location>. </location><text>dal civ. 65/13 al civ. 65/26. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p8">
+        <content eId="B_p8__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p8__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PARCHEGGIO MICHELINO </location>. </location><text>strade a sud, ovest e nord adiacenti al parcheggio: ai pullman. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p9">
+        <content eId="B_p9__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p9__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PARCHEGGIO MICHELINO </location>. </location><text>ai veicoli di peso superiore a 35 q.li. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p10">
+        <content eId="B_p10__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p10__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18150"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PIAZZA DELLA COSTITUZIONE </location>. </location><text>a motocicli e ciclomotori. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p11">
+        <content eId="B_p11__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p11__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38300"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MICHELINO </location>. </location><text>ai veicoli di peso superiore a 35 q.li, da VIALE EUROPA a ROTONDA DONATI. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#pullman_turistici">pullman turistici</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p12">
+        <content eId="B_p12__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p12__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38300"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MICHELINO </location>. </location><text>ai veicoli di peso superiore a 35 q.li, sul tratto compreso tra ROTONDA DONATI e ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#pullman_turistici">pullman turistici</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p13">
+        <content eId="B_p13__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p13__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31030"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">ROTONDA LAVORATORI LICENZIATI PER RAPPRESAGLIA </location>. </location><text>ai veicoli di peso superiore a 35 q.li. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#pullman_turistici">pullman turistici</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p14">
+        <content eId="B_p14__content">
+          <p><concept refersTo="#http://example.com/ordinanza#sosta_regolamentata">SOSTA REGOLAMENTATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p14__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA STALINGRADO </location>. </location><text>tratto da PIAZZA DELLA COSTITUZIONE agli svincoli di accesso/uscita tangenziale 7/7bis (lato sud), entrambi i sensi di marcia, in linea sul lato destro in base al senso di percorrenza; esclusi fermate bus, accessi a passi carrai. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p15">
+        <content eId="B_p15__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p15__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASERATI </location>. </location><text>oltre al DIVIETO DI TRANSITO VEICOLARE ai veicoli di peso superiore a 35 q.li. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#pullman_turistici">pullman turistici</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p16">
+        <content eId="B_p16__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p16__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18150"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PIAZZA DELLA COSTITUZIONE </location>. </location><text>in direzione da VIALE ALDO MORO a VIA STALINGRADO. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#bus_tper">bus di linea Tper</entity>, <entity refersTo="#http://example.com/ordinanza#taxi">taxi</entity>, <entity refersTo="#http://example.com/ordinanza#ncc">n.c.c.</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p17">
+        <content eId="B_p17__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p17__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18150"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PIAZZA DELLA COSTITUZIONE </location>. </location><text>in direzione da VIA STALINGRADO a VIA FELICORI. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#bus_tper">bus di linea Tper</entity>, <entity refersTo="#http://example.com/ordinanza#taxi">taxi</entity>, <entity refersTo="#http://example.com/ordinanza#ncc">n.c.c.</entity>, <entity refersTo="#http://example.com/ordinanza#pullman_contrassegno">pullman turistici con contrassegno Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#accedenti_parcheggio_fiera">accedenti al parcheggio gestito da Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p18">
+        <content eId="B_p18__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p18__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=18150"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">PIAZZA DELLA COSTITUZIONE </location>. </location><text>in direzione da VIA FELICORI a VIALE ALDO MORO. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#bus_tper">bus di linea Tper</entity>, <entity refersTo="#http://example.com/ordinanza#taxi">taxi</entity>, <entity refersTo="#http://example.com/ordinanza#ncc">n.c.c.</entity>, <entity refersTo="#http://example.com/ordinanza#pullman_contrassegno">pullman turistici con contrassegno Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#accedenti_parcheggio_fiera">accedenti al parcheggio gestito da Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p19">
+        <content eId="B_p19__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p19__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA FELICORI </location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#pullman_contrassegno">pullman turistici con contrassegno Bologna &amp; Fiera Parking SPA</entity>, <entity refersTo="#http://example.com/ordinanza#accedenti_passi_carrai">accedenti a passi carrai</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p20">
+        <content eId="B_p20__content">
+          <p><concept refersTo="#http://example.com/ordinanza#chiusura_pista_ciclabile">CHIUSURA DELLA PISTA CICLABILE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p20__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA FELICORI </location>. </location></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p21">
+        <content eId="B_p21__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietodisosta_rimozione">DIVIETO DI SOSTA - RIMOZIONE FORZATA</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p21__loc"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA FELICORI </location>. </location><text>lato ovest (fatti salvi gli accessi ai passi carrai); per i pullman turistici che espongono il contrassegno per il tempo strettamente necessario alle operazioni di carico/scarico passeggeri. </text></p>
+        </content>
+      </proviso>
+    </mainBody>
+    <mainBody>
+      <proviso eId="B_p22">
+        <content eId="B_p22__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE</concept> <orderDate date="2025-05-21" refersTo="#https://w3id.org/italia/onto/ti/startTime">21 maggio 2025</orderDate><orderDate date="2025-05-24" refersTo="#https://w3id.org/italia/onto/ti/endTime">24 maggio 2025</orderDate><orderTime time="2025-05-21T07:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 07.00</orderTime><orderTime time="2025-05-21T20:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 20.00</orderTime><text>in </text><location eId="B_p22__loc" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=40280"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIALE ALDO MORO </location>. </location><text>dal civ. 16 al civ. 26. </text><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#accedenti_passi_carrai">accedenti a passi carrai</entity>, <entity refersTo="#http://example.com/ordinanza#taxi">taxi</entity>, <entity refersTo="#http://example.com/ordinanza#ncc">n.c.c.</entity>, <entity refersTo="#http://example.com/ordinanza#autorizzati_fiera">autorizzati da Bologna &amp; Fiera Parking SPA</entity>.</p>
+        </content>
+      </proviso>
+    </mainBody>
+  </ordinance>
+</akomaNtoso>
