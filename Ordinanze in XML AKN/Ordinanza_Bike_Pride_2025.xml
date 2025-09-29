@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:html="http://www.w3.org/1999/xhtml">
+    <ordinance name="Ordinanza Manifestazione Bike Pride 2025">
+        <meta>
+            <identification source="#org-comune-bologna">
+                <FRBRWork>
+                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1"/>
+                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1"/>
+                    <FRBRdate date="2025-06-05" name="emanazione"/>
+                    <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+                    <FRBRcountry value="it"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1/ita@"/>
+                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1/ita@"/>
+                    <FRBRdate date="2025-06-05" name="redazione"/>
+                    <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
+                    <FRBRlanguage language="ita"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1/ita@/!."/>
+                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-05/1/ita@."/>
+                    <FRBRdate date="2025-06-05" name="pubblicazione"/>
+                    <FRBRauthor href="#org-comune-bologna"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#">
+		<TLCLocation href="https://www.wikidata.org/entity/Q3927190" showAs="Quartiere San Donato–San Vitale" eId="loc-san-donato-san-vitale"/>
+                <TLCPerson eId="http://example.com/ordinanza#firmata_da" href="/akn/ontology/person/http://example.com/ordinanza#firmata_da" showAs="http://example.com/ordinanza#firmata_da"/>
+                <TLCPerson eId="http://xmlns.com/foaf/0.1/person" href="/akn/ontology/person/http://xmlns.com/foaf/0.1/person" showAs="http://xmlns.com/foaf/0.1/person"/>
+
+		<TLCConcept href="http://example.com/ordinanza#ordinanza" showAs="ordinanza del traffico" eId="c-ordinanza"/>
+		<TLCConcept href="http://example.com/ordinanza#numeroprotocollo" showAs="numero di protocollo" eId="c-numeroprotocollo"/>
+		<TLCConcept href="http://example.com/ordinanza#firmata_da" showAs="firmata da" eId="c-firmata-da"/>
+		<TLCConcept href="http://xmlns.com/foaf/0.1/Person" showAs="FOAF Person" eId="c-foaf-person"/>
+		<TLCConcept href="https://w3id.org/italia/onto/cov/Organization" showAs="COV:Organization" eId="c-cov-organization"/>
+		<TLCConcept href="https://w3id.org/italia/onto/cov/SupportUnit" showAs="COV:SupportUnit" eId="c-cov-supportunit"/>
+		<TLCConcept href="https://w3id.org/italia/onto/ti/startTime" showAs="TI:startTime" eId="c-ti-starttime"/>
+		<TLCConcept href="https://w3id.org/italia/onto/ti/duration" showAs="TI:duration" eId="c-ti-duration"/>
+		<TLCConcept href="https://w3id.org/italia/onto/ti/TimeInterval" showAs="TI:TimeInterval" eId="c-ti-timeinterval"/>
+		<TLCConcept href="https://w3id.org/italia/onto/CLV/Address" showAs="CLV:Address" eId="c-clv-address"/>
+		<TLCConcept href="http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#marathon" showAs="maratona / camminata ludico-motoria" eId="c-marathon"/>
+		<TLCConcept href="http://example.com/ordinanza#divietotransitoveicolare" showAs="divieto di transito veicolare" eId="c-divieto-transito-veicolare"/>
+		<TLCConcept href="http://example.com/ordinanza#eccetto" showAs="eccetto" eId="c-eccetto"/>
+		<TLCConcept href="http://example.com/ordinanza#eccetto_categoria_veicoli" showAs="eccetto (categoria veicoli)" eId="c-eccetto-categoria-veicoli"/>
+		<TLCConcept href="http://example.com/ordinanza#veicoli_passi_carrai" showAs="veicoli accedenti a passi carrai" eId="c-veicoli-passi-carrai"/>
+		<TLCConcept href="http://example.com/ordinanza#mezzi_di_soccorso" showAs="mezzi di soccorso" eId="c-mezzi-soccorso"/>
+		<TLCConcept href="http://example.com/ordinanza#veicoli_della_polizia" showAs="veicoli delle forze di polizia" eId="c-veicoli-polizia"/>
+		<TLCConcept href="http://example.com/ordinanza#veicoli_manifestazione" showAs="veicoli operativi a servizio della manifestazione" eId="c-veicoli-manifestazione"/>
+		<TLCConcept href="http://example.com/ordinanza#autobus_in_servizio_di_linea" showAs="autobus in servizio di linea" eId="c-autobus-linea"/>
+
+                <TLCOrganization eId="https://www.wikidata.org/entity/q130758543" href="/akn/ontology/organization/https://www.wikidata.org/entity/q130758543" showAs="https://www.wikidata.org/entity/q130758543"/>
+                <TLCOrganization eId="https://www.wikidata.org/entity/q897817" href="/akn/ontology/organization/https://www.wikidata.org/entity/q897817" showAs="https://www.wikidata.org/entity/Q897817"/>
+		<TLCOrganization href="https://www.wikidata.org/entity/Q1891" showAs="Comune di Bologna" eId="org-comune-bologna"/>
+		<TLCOrganization href="urn:org:comune-bologna:ui-nucleo-operativo-interventi" showAs="Dipartimento Lavori Pubblici, Verde e Mobilità – U.I. Nucleo Operativo Interventi" eId="org-ui-nucleo-operativo-interventi"/>
+            <TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30400"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30150"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38600"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=13500"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=8100"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=2900"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50950"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=59800"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=49750"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31000"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20500"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20550"/><TLCLocation href="https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30400"/></references>
+            <publication date="2025-06-12" name="Ordinanza Scandellara" showAs="" number="430965/2025"/>
+        </meta>
+        <preface>
+            <p>
+                <img src="https://archivio-notizie.comune.bologna.it/wp-content/uploads/2014/12/news-nuovo-logo.jpg" alt="logo Comune di Bologna" width="140" height="148"/>
+                <eol/>
+                <ordinanceType refersTo="#http://example.com/ordinanza#ordinanza">Ordinanza del Traffico</ordinanceType>
+                <ordinanceDate>12 Giugno 2025 </ordinanceDate>
+                <ordinanceNumber refersTo="#http://example.com/ordinanza#numeroprotocollo">PG. N. : 416495/2025</ordinanceNumber>
+                <ordinanceAuthority refersTo="#https://w3id.org/italia/onto/cov/organization"> Comune di Bologna</ordinanceAuthority>
+                <ordinanceAuthority refersTo="#https://w3id.org/italia/onto/cov/supportunit"> Dipartimento Lavori Pubblici , Verde e Mobilità - U.I. Nucleo Operativo Interventi</ordinanceAuthority>
+                <signature refersTo="#http://example.com/ordinanza#firmata_da">
+                    <person refersTo="#http://xmlns.com/foaf/0.1/person" as="#ilResponsabileDellU.i.NucleoOperativoInterventi" eId="person_1">Nicola Latronico</person>
+                </signature>
+                <eol/>
+                <eol/>
+                <eol/>
+            </p>
+        </preface>
+        <preamble>
+            <p>I L D I R E T T O R E 
+                <eol/>
+                <eol/>Vista la richiesta presentata presso il 
+                <location refersTo="#r0" eId="location_1">quartiere San Donato - San Vitale</location> da parte della Bike Pride Bologna tendente ad ottenere l'autorizzazione allo svolgimento della 
+                <event refersTo="#http://cef.uv.es/lodroadtran18/def/transporte/dtx_srti#marathon">7° camminata a passo libero ludico-motoria</event> in occasione della giornata mondiale del donatore di sangue in programma il giorno 
+                <date date="2025-06-14" refersTo="#https://w3id.org/italia/onto/ti/starttime">14 giugno 2025</date>;
+            </p>
+            <p>Rilevato che presso il 
+                <location refersTo="#r0" eId="location_2">quartiere San Donato - San Vitale</location> del Comune di Bologna è in corso di predisposizione l'atto autorizzativo allo svolgimento della manifestazione;
+            </p>
+            <p>Considerato che per poter dare corso a tale iniziativa è indispensabile adottare specifici provvedimenti di traffico allo scopo di evitare difficoltà di circolazione ;</p>
+            <p>Visto il parere favorevole allo svolgimento della manifestazione in premessa espresso dal Dipartimento Cultura, Sport e Promozione della Città - Settore Sport;</p>
+            <p>Visto il parere favorevole della 
+                <organization refersTo="#https://www.wikidata.org/entity/q130758543">Polizia Locale del Comune di Bologna</organization>;
+            </p>
+            <p>Ai sensi degli artt. 
+                <ref href="/akn/it/act/decretolegislativo/1992-04-30/285/!main/#https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art5" eId="ref_1"> 5</ref> - 
+                <ref href="/akn/it/act/decretolegislativo/1992-04-30/285/!main/#https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art6" eId="ref_2">6</ref> - 
+                <ref href="/akn/it/act/decretolegislativo/1992-04-30/285/!main/#https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art7" eId="ref_3">7</ref> del 
+                <ref href="/akn/it/act/decretolegislativo/1992-04-30/285/!main/#https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285" eId="ref_4">Decreto Legislativo 30/04/1992 n. 285 "Nuovo Codice dellaStrada"</ref> e successive modificazioni e relativo Regolamento di attuazione 
+                <ref href="/akn/it/act/dpr/1992-12-16/495/!main/#http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495" eId="ref_5">D.P.R. n. 495 del 16/12/1992</ref>;
+            </p>
+            <p>Vista la delega di firma conferita con determina dirigenziale P.G. n. 469642/2024;</p>
+            <p>C O N S E N T E 
+                <eol/>
+                <eol/>il giorno 
+                <ordinanceDate date="2025-06-15" refersTo="#https://w3id.org/italia/onto/ti/starttime">15 giugno 2025</ordinanceDate>
+                <ordinanceTime time="2025-06-15T17:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 17.00</ordinanceTime>
+		<ordinanceTime time="2025-06-15T19:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 19.00</ordinanceTime> partenza dal Parco della Montagnola, via Irnerio, via dell'Indipendenza
+(attraversamento), via dei Mille, via Amendola, via Boldrini, viale Pietramellara
+(attraversamento), via Bovi Campeggi, rotonda Ayrton Senna, sottopasso Maserati,
+rotonda Bottoni, sottopasso Maserati, via de' Carracci, via Zanardi, via della Beverara,
+via Gagarin, rotonda Gozzadini, via Barbieri, via Fioravanti, via dell'Arcoveggio, via
+Roncaglio, via di Corticella, rotonda Vittime Civili di Guerra, via di Corticella, rotonda
+Consiglio d'Europa, via di Corticella, piazza dell'Unità, via Creti, via Stalingrado
+(attraversamento), via Gnudi, viale della Repubblica, via Ruggeri, via del Lavoro, via San
+Donato, rotonda Sant'Egidio, via Berlinguer, via Malaguti, piazza di Porta San Donato, via
+Irnerio, arrivo nel parco della Montagnola.
+            </p>
+        </preamble>
+        <mainBody>ORDINA
+
+            <proviso eId="proviso_1"><content eId="proviso_1__content"><p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">CHIUSURA AL TRANSITO VEICOLARE </concept><orderDate date="2025-06-15" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">15 giugno 2025</orderDate><orderTime time="2025-06-15T17:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 17.00</orderTime><orderTime time="2025-06-15T19:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 19.00</orderTime> su tutta la sede stradale, per il tempo strettamente necessario al passaggio del corteo, lungo il seguente percorso: <location eId="perc_location_1"><location refersTo="#https://w3id.org/italia/onto/clv/address">Parco della Montagnola</location>, </location><location eId="perc_location_2" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30400"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Irnerio</location>, </location><location eId="perc_location_3" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30150"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Dell'Indipendenza</location>, </location><location eId="perc_location_4" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=38600"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Dei Mille</location>, </location><location eId="perc_location_5"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Amendola</location>, </location><location eId="perc_location_6"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Boldrini</location>, </location><location eId="perc_location_7"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIALE Pietramellara</location>, </location><location eId="perc_location_8"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Bovi Campeggi</location>, </location><location eId="perc_location_9"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Ayrton Senna</location>, </location><location eId="perc_location_10"><location refersTo="#https://w3id.org/italia/onto/clv/address">Sottopasso Maserati</location>, </location><location eId="perc_location_11"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Bottoni</location>, </location><location eId="perc_location_12"><location refersTo="#https://w3id.org/italia/onto/clv/address">Sottopasso Maserati</location>, </location><location eId="perc_location_13" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=13500"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA De' Carracci</location>, </location><location eId="perc_location_14"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Zanardi</location>, </location><location eId="perc_location_15" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=8100"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Della Beverara</location>, </location><location eId="perc_location_16"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Gagarin</location>, </location><location eId="perc_location_17"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Gozzadini</location>, </location><location eId="perc_location_18"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Barbieri</location>, </location><location eId="perc_location_19"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Fioravanti</location>, </location><location eId="perc_location_20" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=2900"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Dell'Arcoveggio</location>, </location><location eId="perc_location_21" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=50950"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Roncaglio</location>, </location><location eId="perc_location_22" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Di Corticella</location>, </location><location eId="perc_location_23"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Vittime Civili di Guerra</location>, </location><location eId="perc_location_24" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Di Corticella</location>, </location><location eId="perc_location_25"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Consiglio d'Europa</location>, </location><location eId="perc_location_26" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=17950"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Di Corticella</location>, </location><location eId="perc_location_27" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=59800"><location refersTo="#https://w3id.org/italia/onto/clv/address">PIAZZA Dell'Unità</location>, </location><location eId="perc_location_28"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Creti</location>, </location><location eId="perc_location_29" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=55950"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Stalingrado</location>, </location><location eId="perc_location_30"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Gnudi</location>, </location><location eId="perc_location_31" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=49750"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIALE Della Repubblica</location>, </location><location eId="perc_location_32"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Ruggeri</location>, </location><location eId="perc_location_33" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=31000"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Del Lavoro</location>, </location><location eId="perc_location_34" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20500"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA San Donato</location>, </location><location eId="perc_location_35"><location refersTo="#https://w3id.org/italia/onto/clv/address">Rotonda Sant'Egidio</location>, </location><location eId="perc_location_36"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Berlinguer</location>, </location><location eId="perc_location_37"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Malaguti</location>, </location><location eId="perc_location_38" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=20550"><location refersTo="#https://w3id.org/italia/onto/clv/address">PIAZZA Di Porta San Donato</location>, </location><location eId="perc_location_39" refersTo="#https://opendata.comune.bologna.it/explore/dataset/rifter_arcstra_li/table/?q=30400"><location refersTo="#https://w3id.org/italia/onto/clv/address">VIA Irnerio</location>, </location><location eId="perc_location_40"><location refersTo="#https://w3id.org/italia/onto/clv/address">Parco della Montagnola</location>. </location><concept refersTo="#http://example.com/ordinanza#eccetto">Eccetto </concept><entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">veicoli di pronto intervento</entity> e <entity refersTo="#http://example.com/ordinanza#veicoli_manifestazione">veicoli ufficiali di servizio al seguito della manifestazione</entity>.</p></content></proviso><proviso eId="proviso_2"><content eId="proviso_2__content"><p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">CHIUSURA AL TRANSITO VEICOLARE </concept><orderDate date="2025-06-15" refersTo="#https://w3id.org/italia/onto/ti/TimeInstant">15 giugno 2025</orderDate><orderTime time="2025-06-15T17:00:00" refersTo="#https://w3id.org/italia/onto/ti/starttime">dalle ore 17.00</orderTime><orderTime time="2025-06-15T19:00:00" refersTo="#https://w3id.org/italia/onto/ti/endtime">alle ore 19.00</orderTime> per tutte le strade confluenti lungo il percorso, in corrispondenza delle intersezioni con le stesse; chiusura da garantire con transenne e/o movieri muniti di bandierine e DPI conformi al Codice della Strada.</p></content></proviso></mainBody>
+        <conclusions eId="conclusions">
+            <p>DISPONE
+                <eol/>
+                <eol/>Che le 
+                <entity refersTo="#http://example.com/ordinanza#autobus_in_servizio_di_linea">linee bus urbane ed extraurbane</entity>, negli orari coincidenti con le modifiche della circolazione veicolare indicate nella presente ordinanza, subiranno quelle modifiche di percorso e di fermata necessarie allo svolgimento della manifestazione in premessa.
+                <eol/>
+                <eol/>
+            </p>
+            <p>ORDINA INOLTRE
+                <eol/>All'Organizzazione della manifestazione: La collocazione di opportuna segnaletica di preavviso in tutte le intersezioni stradali poste in prossimità del percorso di gara.
+                <eol/>La perfetta esecuzione della segnaletica stradale a norma del 
+                <ref eId="ref_6">Decreto Legislativo del 30/04/1992 n. 285 recante il "Nuovo Codice della Strada"</ref>  e del 
+                <ref href="/akn/it/act/dpr/1992-12-16/495/!main/#http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495" eId="ref_7">D.P.R. n. 495 del 16/12/1992</ref> (compreso gli artt. 20 e 21). Deve essere garantito in qualsiasi momento della manifestazione il transito veicolare dei 
+                <entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">mezzi di soccorso</entity>. Di dare comunicazione, a residenti ed attività commerciali della zona, dei provvedimenti di traffico contenuti nella presente ordinanza mediante volantinaggio.
+            </p>
+            <p>La perfetta esecuzione della segnaletica stradale a norma del Nuovo codice della Strada è imposta al Responsabile della Manifestazione nel rispetto delle seguenti ulteriori
+                <eol/>prescrizioni:
+                <eol/>
+                <eol/>a) Immediatamente prima dell'inizio della manifestazione, obbligo di effettuare una scrupolosa ricognizione delle strade comunali interessate, al fine di valutare tutte le eventuali anomalie o imperfezioni della carreggiata e delle pertinenze stradali che potrebbero rappresentare situazioni di pericolo per lo svolgimento della manifestazione stessa;
+                <eol/>
+                <eol/>b) I partecipanti alla competizione dovranno essere preceduti e seguiti da autovetture del Comitato promotore o della 
+                <organization refersTo="#https://www.wikidata.org/entity/q130758543">Polizia Locale</organization>, da contattare preventivamente a cura della Società organizzatrice, munite di lampeggianti e di bandierine in modo da rendere sicuro e perfettamente evidente il passaggio;
+                <eol/>
+                <eol/>c) Obbligo dell’istituzione lungo il percorso di un idoneo servizio di sorveglianza al fine di garantire la regolarità del traffico e il regolare svolgimento della competizione secondo le norme ed i regolamenti sportivi in materia;
+                <eol/>
+                <eol/>d) Le intersezioni stradali e le aree in cui sosta il pubblico dovranno essere presidiati da personale munito di bandierine e di indumento dotato di segni di riconoscimento oppure Agenti di Polizia Locale;
+                <eol/>
+                <eol/>e) Obbligo di non arrecare danni al patrimonio stradale, all'ambiente, alle piantagioni ed agli impianti;
+                <eol/>
+                <eol/>f) Obbligo di non lasciare rifiuti lungo il percorso e di osservare tutte le cautele per quanto attiene al pericolo d'incendi;
+                <eol/>
+                <eol/>g) Obbligo del ripristino dei luoghi e del patrimonio stradale nel caso di eventuali danni ;
+                <eol/>
+                <eol/>i) Obbligo di attenersi scrupolosamente a tutte le disposizioni impartite dagli organi competenti per i servizi di Polizia Stradale;
+                <eol/>
+                <eol/>l) Ogni danno apportato alla segnaletica verticale sarà a carico del Comitato promotore ;
+                <eol/>
+                <eol/>m) E' fatto obbligo di osservare, senza eccezioni, tutte le disposizioni di legge e regolamento in materia, con particolare riferimento al Nuovo Codice della Strada ed al suo Regolamento di Attuazione;
+                <eol/>
+                <eol/>n) La perfetta esecuzione della segnaletica stradale, a norma del vigente C.d.S., è imposta al Responsabile dell’organizzazione con particolare riferimento all’
+                <ref href="/akn/it/act/decretolegge/1992-04-30/285/!main/#https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art190" eId="ref_8">art. 190 del C.d.S</ref>. (comportamento dei pedoni).
+            </p>
+            <p>DISPONE INOLTRE
+                <eol/>
+                <eol/>All'Organizzazione della manifestazione:
+                <eol/>- Il presente provvedimento dovrà essere tenuto sul luogo di svolgimento dell'evento ed esibito ad ogni richiesta degli Agenti di Polizia Locale e delle altre forze di 
+                <organization refersTo="#https://www.wikidata.org/entity/q897817">Polizia dello Stato</organization>, competenti per legge.
+                <eol/>- Di provvedere ad avvertire i residenti e i possessori di autorimesse o garage privati ubicati nella zona interessata dalla manifestazione sulle modalità ed i tempi di svolgimento della stessa .
+                <eol/>- Di attuare le eventuali disposizioni in materia di pubblica sicurezza per la gestione della mobilità veicolare e pedonale date dagli organi competenti (Questura/Prefettura).
+                <eol/>
+                <eol/>La presente ordinanza è rilasciata ai soli fini di viabilità e non costituisce in alcun modo atto autorizzatorio dell'evento, pertanto i provvedimenti di modifica della viabilità indicati nel presente atto potranno essere istituiti solo se gli organizzatori saranno in possesso di tutte le autorizzazioni necessarie allo svolgimento della manifestazione, nonché all’osservanza delle prescrizioni impartite dai relativi uffici competenti; Rimane altresì espressamente stabilito che questo Settore non assume alcuna responsabilità per eventuali danni o incidenti che dovessero verificarsi a persone o cose, prima, durante o per causa di tale manifestazione.
+            </p>
+            <p>AUTORIZZA
+                <eol/>Il Corpo di P.L. a modificare i termini di tempo, le limitazioni e le restrizioni al traffico durante l’attuazione di cui sopra qualora esigenze o reali situazioni di fatto dovessero richiederlo.
+            </p>
+            <p>SOSPENDE
+                <eol/>Le precedenti ordinanze in contrasto con la presente, nel periodo suindicato.
+            </p>
+            <p>Dalla Residenza Municipale , 
+                <eol/>
+                <eol/>IL RESPONSABILE DELL 'U.I. NUCLEO OPERATIVO INTERVENTI 
+                <eol/>
+                <eol/>
+                <signature>documento firmato digitalmente 
+                    <person refersTo="#http://xmlns.com/foaf/0.1/person" as="#ilResponsabileDellU.i.NucleoOperativoInterventi" eId="person_2"> Nicola Latronico</person>
+                </signature>
+            </p>
+        </conclusions>
+    </ordinance>
+</akomaNtoso>
