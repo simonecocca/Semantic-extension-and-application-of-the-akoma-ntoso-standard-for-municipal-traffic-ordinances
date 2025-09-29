@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <ordinance name="Ordinanza lavori Via Massarenti – Fase 1 e Fase 2 (2025)">
+    <meta>
+      <identification source="#ComuneBologna">
+        <FRBRWork>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13/work"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13"/>
+          <FRBRdate date="2025-06-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+          <FRBRcountry value="it"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13/ita@/exp"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13/ita@"/>
+          <FRBRdate date="2025-06-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+          <FRBRlanguage language="ita"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13/ita@/main.xml"/>
+          <FRBRuri value="/akn/it/bo/ordinanza-comunale/massarenti-veneta/2025-06-13/ita@"/>
+          <FRBRdate date="2025-06-13"/>
+          <FRBRauthor href="#org-comune-bologna"/>
+        </FRBRManifestation>
+      </identification>
+      <publication name="Ordinanza lavori Via Massarenti – Fase 1 e Fase 2 (2025)" date="2025-06-13" number="440200/2025"/>
+      <references>
+        <TLCConcept eId="c-divietotransitoveicolare" href="http://example.com/ordinanza#divietotransitoveicolare" showAs="DIVIETO DI TRANSITO VEICOLARE"/>
+        <TLCConcept eId="c-direzione_obbligatoria" href="http://example.com/ordinanza#direzione_obbligatoria" showAs="DIREZIONE OBBLIGATORIA"/>
+        <TLCConcept eId="c-direzioni_consentite" href="http://example.com/ordinanza#direzioni_consentite" showAs="DIREZIONI CONSENTITE"/>
+        <TLCConcept eId="c-senso_unico_circolazione" href="http://example.com/ordinanza#senso_unico_circolazione" showAs="SENSO UNICO DI CIRCOLAZIONE"/>
+        <TLCConcept eId="c-restringimento_carreggiata" href="http://example.com/ordinanza#restringimento_carreggiata" showAs="RESTRINGIMENTO DELLA CARREGGIATA"/>
+        <TLCConcept eId="c-eccetto" href="http://example.com/ordinanza#eccetto" showAs="ECCETTO"/>
+      </references>
+    </meta>
+    <mainBody>
+      <proviso eId="fase1_prov_1">
+        <content eId="fase1_prov_1__content">
+          <p><concept refersTo="#http://example.com/ordinanza#restringimento_carreggiata">RESTRINGIMENTO DELLA CARREGGIATA STRADALE </concept>nel tratto da <orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <location eId="fase1_p1_loc1"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA AZZURRA </location> alla prossimità di </location><location eId="fase1_p1_loc2"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> con il mantenimento di UNA CORSIA (min. 4.00 m) sul lato SUD (cantiere lato NORD).</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_2">
+        <content eId="fase1_prov_2__content">
+          <p><concept refersTo="#http://example.com/ordinanza#senso_unico_circolazione">ISTITUZIONE DI SENSO UNICO DI CIRCOLAZIONE </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <location eId="fase1_p2_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> con direzione da </location><location eId="fase1_p2_loc_azz"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA AZZURRA </location> verso </location><location eId="fase1_p2_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> e conseguente SENSO VIETATO nell'opposta direzione.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_3">
+        <content eId="fase1_prov_3__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzioni_consentite">DIREZIONI CONSENTITE A DESTRA E A SINISTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>per i veicoli provenienti dal lato periferia all'intersezione </text><location eId="fase1_p3_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> / </location><location eId="fase1_p3_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_4">
+        <content eId="fase1_prov_4__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>per i veicoli che si immettono da </text><location eId="fase1_p4_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> su </location><location eId="fase1_p4_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_5">
+        <content eId="fase1_prov_5__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>per i veicoli in </text><location eId="fase1_p5_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> (civici 113–133/4) all'intersezione con l'asse principale.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_6">
+        <content eId="fase1_prov_6__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>all'intersezione con </text><location eId="fase1_p6_loc_golf"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA TULLO GOLFARELLI </location> / </location><location eId="fase1_p6_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_7">
+        <content eId="fase1_prov_7__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A SINISTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>all'intersezione con </text><location eId="fase1_p7_loc_pis"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA NICOLO' PISANO </location> / </location><location eId="fase1_p7_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_8">
+        <content eId="fase1_prov_8__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzioni_consentite">DIREZIONI CONSENTITE DRITTO E A SINISTRA </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>all'intersezione con </text><location eId="fase1_p8_loc_dona"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DONATELLO </location> / </location><location eId="fase1_p8_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase1_prov_9">
+        <content eId="fase1_prov_9__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE </concept><orderDate date="2025-06-23" refersTo="#https://w3id.org/italia/onto/ti/startTime">23 giugno 2025</orderDate><orderDate date="2025-07-13" refersTo="#https://w3id.org/italia/onto/ti/endTime">13 luglio 2025</orderDate> <text>all'intersezione </text><location eId="fase1_p9_loc_pis"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA NICOLO' PISANO </location> / </location><location eId="fase1_p9_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#veicoli_residenti">veicoli residenti ed accedenti ai passi carrabili</entity>, <entity refersTo="#http://example.com/ordinanza#veicoli_igiene_urbana">veicoli del servizio di igiene urbana (Herambiente)</entity> e <entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">veicoli di soccorso</entity> compatibilmente con le esigenze di cantiere.</p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_1">
+        <content eId="fase2_prov_1__content">
+          <p><concept refersTo="#http://example.com/ordinanza#restringimento_carreggiata">RESTRINGIMENTO DELLA CARREGGIATA STRADALE </concept>nel tratto da <orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <location eId="fase2_p1_loc1"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA AZZURRA </location> alla prossimità di </location><location eId="fase2_p1_loc2"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> con il mantenimento di UNA CORSIA (min. 4.00 m) sul lato NORD (cantiere lato SUD).</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_2">
+        <content eId="fase2_prov_2__content">
+          <p><concept refersTo="#http://example.com/ordinanza#senso_unico_circolazione">ISTITUZIONE DI SENSO UNICO DI CIRCOLAZIONE </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <location eId="fase2_p2_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> con direzione da </location><location eId="fase2_p2_loc_azz"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA AZZURRA </location> verso </location><location eId="fase2_p2_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> e conseguente SENSO VIETATO nell'opposta direzione.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_3">
+        <content eId="fase2_prov_3__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzioni_consentite">DIREZIONI CONSENTITE A DESTRA E A SINISTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>per i veicoli provenienti dal lato periferia all'intersezione </text><location eId="fase2_p3_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> / </location><location eId="fase2_p3_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_4">
+        <content eId="fase2_prov_4__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>per i veicoli che si immettono da </text><location eId="fase2_p4_loc_parco"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DEL PARCO </location> su </location><location eId="fase2_p4_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_5">
+        <content eId="fase2_prov_5__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>per i veicoli in </text><location eId="fase2_p5_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> (civici 113–133/4) all'intersezione con l'asse principale.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_6">
+        <content eId="fase2_prov_6__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>in </text><location eId="fase2_p6_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> (civici 113–133/4) all'intersezione con l'asse principale. </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#veicoli_residenti">veicoli residenti ed accedenti ai passi carrabili</entity>, <entity refersTo="#http://example.com/ordinanza#veicoli_igiene_urbana">veicoli del servizio di igiene urbana (Herambiente)</entity> e <entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">veicoli di soccorso</entity> compatibilmente con le esigenze di cantiere.</p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_7">
+        <content eId="fase2_prov_7__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A DESTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>all'intersezione con </text><location eId="fase2_p7_loc_golf"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA TULLO GOLFARELLI </location> / </location><location eId="fase2_p7_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_8">
+        <content eId="fase2_prov_8__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>all'intersezione </text><location eId="fase2_p8_loc_golf"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA TULLO GOLFARELLI </location> / </location><location eId="fase2_p8_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#veicoli_residenti">veicoli residenti ed accedenti ai passi carrabili</entity>, <entity refersTo="#http://example.com/ordinanza#veicoli_igiene_urbana">veicoli del servizio di igiene urbana (Herambiente)</entity> e <entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">veicoli di soccorso</entity> compatibilmente con le esigenze di cantiere.</p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_9">
+        <content eId="fase2_prov_9__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzione_obbligatoria">DIREZIONE OBBLIGATORIA A SINISTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>all'intersezione con </text><location eId="fase2_p9_loc_pis"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA NICOLO' PISANO </location> / </location><location eId="fase2_p9_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_10">
+        <content eId="fase2_prov_10__content">
+          <p><concept refersTo="#http://example.com/ordinanza#direzioni_consentite">DIREZIONI CONSENTITE DRITTO E A SINISTRA </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>all'intersezione con </text><location eId="fase2_p10_loc_dona"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DONATELLO </location> / </location><location eId="fase2_p10_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location>.</location></p>
+        </content>
+      </proviso>
+      <proviso eId="fase2_prov_11">
+        <content eId="fase2_prov_11__content">
+          <p><concept refersTo="#http://example.com/ordinanza#divietotransitoveicolare">DIVIETO DI TRANSITO VEICOLARE </concept><orderDate date="2025-07-14" refersTo="#https://w3id.org/italia/onto/ti/startTime">14 luglio 2025</orderDate><orderDate date="2025-08-03" refersTo="#https://w3id.org/italia/onto/ti/endTime">3 agosto 2025</orderDate> <text>all'intersezione </text><location eId="fase2_p11_loc_rampa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA DELLA RAMPA </location> / </location><location eId="fase2_p11_loc_massa"><location refersTo="#https://w3id.org/italia/onto/CLV/Address">VIA MASSARENTI </location> </location><concept refersTo="#http://example.com/ordinanza#eccetto">ECCETTO </concept><entity refersTo="#http://example.com/ordinanza#veicoli_residenti">veicoli residenti ed accedenti ai passi carrabili</entity>, <entity refersTo="#http://example.com/ordinanza#veicoli_igiene_urbana">veicoli del servizio di igiene urbana (Herambiente)</entity> e <entity refersTo="#http://example.com/ordinanza#mezzi_di_soccorso">veicoli di soccorso</entity> compatibilmente con le esigenze di cantiere.</p>
+        </content>
+      </proviso>
+    </mainBody>
+  </ordinance>
+</akomaNtoso>
