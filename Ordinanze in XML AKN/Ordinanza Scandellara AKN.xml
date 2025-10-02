@@ -3,22 +3,22 @@
         <meta>
             <identification source="#org-comune-bologna">
                 <FRBRWork>
-                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1"/>
-                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1"/>
+                    <FRBRthis value="/akn/it-bo/act/ordinanza-comunale/2025-06-12/1!main"/>
+                    <FRBRuri value="/akn/it-bo/ordinanza-comunale/2025-06-12/1"/>
                     <FRBRdate date="2025-06-12" name="emanazione"/>
                     <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
                     <FRBRcountry value="it"/>
                 </FRBRWork>
                 <FRBRExpression>
-                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1/ita@"/>
-                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1/ita@"/>
+                    <FRBRthis value="/akn/it-bo/act/ordinanza-comunale/2025-06-12/1/ita!main"/>
+                    <FRBRuri value="/akn/it-bo/ordinanza-comunale/2025-06-12/1/ita"/>
                     <FRBRdate date="2025-06-12" name="redazione"/>
                     <FRBRauthor href="#org-ui-nucleo-operativo-interventi"/>
                     <FRBRlanguage language="ita"/>
                 </FRBRExpression>
                 <FRBRManifestation>
-                    <FRBRthis value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1/ita@/!."/>
-                    <FRBRuri value="/akn/it//ordinanza-comunale/latronico-nicola/2025-06-12/1/ita@."/>
+                    <FRBRthis value="/akn/it-bo/act/ordinanza-comunale/2025-06-12/1/ita!main.xml"/>
+                    <FRBRuri value="/akn/it-bo/ordinanza-comunale/2025-06-12/1/ita.akn"/>
                     <FRBRdate date="2025-06-12" name="pubblicazione"/>
                     <FRBRauthor href="#org-comune-bologna"/>
                 </FRBRManifestation>
